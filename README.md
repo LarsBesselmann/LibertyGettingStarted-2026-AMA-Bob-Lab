@@ -858,8 +858,13 @@ You will need the migration plan in the next section.
     Make sure that the build is successful.
 
     <kbd>![mvn-install_WAS_library](./images/media/mvn-install_WAS_library.png)</kbd>
+
+4. Apply the AMA PoC access key:
+
+        sh ~/software/AMA/AMA_apply_PoC_Key.sh 
+
       
-4. Copy the migration plan to the Downloads directory
+5. Copy the migration plan to the Downloads directory
 
         cp ~/software/AMA/modresorts/modresorts-2_0_0_war.ear_migrationPlan.zip ~/Downloads/
 
