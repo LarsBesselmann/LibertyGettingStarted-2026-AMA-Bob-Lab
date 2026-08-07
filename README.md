@@ -844,7 +844,7 @@ You will need the migration plan in the next section.
 2. Clone the repository to get access to the application binaries and more.
 
         rm -rf ~/Student/temprepo/
-        git clone https://github.com/LarsBesselmann/LibertyGettingStarted-2026-AMA-Lab ~/Student/temprepo
+        git clone https://github.com/LarsBesselmann/LibertyGettingStarted-2026-AMA-Bob-Lab ~/Student/temprepo
         mv ~/Student/temprepo/modresorts-project ~/Student
         rm -rf ~/Student/temprepo/
 
