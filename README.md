@@ -110,26 +110,7 @@ Let's check if AMA is already started. This can be validated by reviewing if the
     Wait until AMA has started and the URL is displayed
     <kbd>![AMA_Launcher_stopped](./images/media/AMA_Launcher_started.png)</kbd>
 
-3. Apply the AMA PoC access key which will unlock additional AMA capabilities. To do so, execure the following command in the terminal window:
 
-        sh ~/software/AMA/AMA_apply_PoC_Key.sh 
-
-
-4. Create a workspace with sample data
-
-    In the terminal window, execute the following command:
-    
-        curl -k -X 'POST' \
-        'https://localhost:2220/lands_advisor/advisor/v2/collectionArchives/uploadSampleData' \
-          -H 'accept: */*' \
-          -H 'locale: en' \
-          -H 'workspaceName: Sample_Data' \
-          -d ''
-
-
-
-
-### 5.2 Explore the AMA User Interface
 To explore the AMA User Interface, you will create a workspace with sample data. A workspace is a designated area that will house the migration recommendations provided by AMA for existing applications and/or environments. You can name and organize these however you want, whether it’s by business application, location, or teams.
 Later on, you will create another workspace for the WebSphere landscape used in this lab environment.
 
@@ -146,7 +127,7 @@ Later on, you will create another workspace for the WebSphere landscape used in 
     
         Finally, you should see the Application Modernization Overview Screen.
 
-        <kbd>![AMA_Initial_Screen0](./images/media/AMA_Initial_Screen0.png)</kbd>
+        <kbd>![AMA_Initial_Screen](./images/media/AMA_Initial_Screen0.png)</kbd>
     
         Click the button to **Accept all** to accept all cookies.
         An introduction wizard is displayed.
@@ -263,40 +244,6 @@ Later on, you will create another workspace for the WebSphere landscape used in 
         <kbd>![AMA_Assessment_Application_Expanded.png](./images/media/AMA_Assessment_Application_Expanded.png)</kbd>
     
 
-### 5.3 Explore the AMA APIs
-Application Modernization Accelerator (AMA) also provides Swagger interfaces to access some of the data via APIs.
-
-1. Open a browser and enter the following URL:
-    https://localhost:2220/openapi/ui/
-
-    If you get a warning, that there is a potential security risk, click on **Advanced** and then **Accept the Risk and Continue**. 
-
-    <kbd>![AMA_Potential_Security_Risk](./images/media/AMA_Potential_Security_Risk2.png)</kbd>
-
-    Finally, the Swagger UI opens:
-
-    <kbd>![AMA_Swagger_APIs.png](./images/media/AMA_Swagger_APIs.png)</kbd>
-
-2. Look at the different APIs which allow to create a new workspace, upload a data collection or bulk, upload the license key and much more.
-
-    Scroll down to the section **collection archives**.
-    <kbd>![AMA_Swagger_APIs2.png](./images/media/AMA_Swagger_APIs2.png)</kbd>
-
-    To create for example the demo workspace which you just created manually, you could use the **uploadSampleData** API via the following command:
-
-        curl -k -X 'POST' \
-        'https://localhost:2220/lands_advisor/advisor/v2/collectionArchives/uploadSampleData' \
-          -H 'accept: */*' \
-          -H 'locale: en' \
-          -H 'workspaceName: Sample_Data' \
-          -d ''
-
-3. Close the browser window with the Swagger UI.
-
-
-<br>
-Right now, you just explored the capabilities of AMA based on sample data. In the next section, you will analyze the modresorts application to identify the efforts to migrate it from traditional WAS to Liberty. You will use the AMA Discovery tool to gather the data collection from an existing WebSphere installation and perform some analysis.
-Then you will use the AMA Dev Tools to make the required code changes.
 
 
 ## 6. Build and analyze the modresorts application.
@@ -495,7 +442,7 @@ To evaluate on-premises Java applications, you need to run the AMA Discovery Too
         The discovery tool package will be generated and prepared for download.
         Once done, you will likely get a warning, that there is a potential security risk, click on **Advanced** and then **Accept the Risk and Continue**. 
 
-        <kbd>![AMA_Potential_Security_Risk](./images/media/AMA_Potential_Security_Risk3.png)</kbd>
+        <kbd>![AMA_Potential_Security_Risk3](./images/media/AMA_Potential_Security_Risk3.png)</kbd>
 
     
         The AMA Discovery Tool package will be generated and downloaded.
@@ -919,11 +866,11 @@ You will need the migration plan in the next section.
 
 <br>
 
-## 7. Use the AMA Dev Tools
+## 7. Use the IBM Bob Premium Package for Java Modernization
 
 Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools will help you to apply automated fixes and see the remaining issues in the source code.
 
-### 7.1 Explore the Visual Studio Code installation and extensions
+### 7.1 Explore the IBM Bob installation and extensions
 
 1. Initialize git
 
@@ -937,13 +884,13 @@ Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools wi
         git add .
         git commit -a -m "Initial project"
 
-2. Open VS Code
+2. Open IBM Bob
 
-    1. Start VS Code.
+    1. Start the IBM Bob IDE
 
-            code . &
+            bobide . &
 
-        Visual Studio Code UI will be opened.
+        The IBM Bob IDE will be opened.
 
     2. You might see the one or other panel:
     
