@@ -914,37 +914,22 @@ Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools wi
             <kbd>![Bob_Keep_current_version.png](./images/media/Bob_Keep_current_version.png)</kbd>
 
 
-    3. On the Welcome Panel you can open the Walkthrough which allows to change the VS Code settings like theme and other settings. 
+    3. On the Welcome Panel you can open the Walkthrough to get more insight into IBM Bob. Feel free to open it.
 
-        <kbd>![VSCode_Welcome.png](./images/media/VSCode_Welcome.png)</kbd>
+        <kbd>![Bob_Welcome.png](./images/media/Bob_Welcome.png)</kbd>
 
-        On the panel called **Walkthrough: Setup VS Code**, you can change the theme. The lab document uses as color **Light+**. Feel free to adjust the theme to your choice. 
+    Finally, close the **Welcome** panel. 
 
-        <kbd>![VSCode_Walkthrough.png](./images/media/VSCode_Walkthrough.png)</kbd>
+    4. Under settings, you can change the theme. The lab document uses as color **Light+**. Feel free to adjust the theme to your choice. 
 
-    4. Finally, close the panel called **Walkthrough: Getting started with VS Code** and the **Welcome** panel. Also close the panel called **Chat**.
+        <kbd>![Bob_Change_Theme.png](./images/media/Bob_Change_Theme.png)</kbd>
 
+    
     5. If you see during the lab one of the pop-ups below or any other pop-up asking to install something, close the pop-up without installation by clicking the **X**. 
 
-        <kbd>![VSCode_Popup1.png](./images/media/VSCode_Popup1.png)</kbd>
+        <kbd>![Bob_Popup1.png](./images/media/Bob_Popup1.png)</kbd>
 
-        <kbd>![VSCode_Popup2.png](./images/media/VSCode_Popup2.png)</kbd>
-
-
-    6. Look at the bottom left of your VS Code window to find out if VS Code runs in **Restricted Mode**
-    
-        <kbd>![VSCode_RestrictedMode2.png](./images/media/VSCode_RestrictedMode2.png)</kbd>
-
-        If so, click on the field *Restricted Mode* to open the panel.
-
-        <kbd>![VSCode_RestrictedMode1.png](./images/media/VSCode_RestrictedMode1.png)</kbd>
-
-        Then click on **Trust** to make this workspace trusted.
-        <kbd>![VSCode_RestrictedMode3.png](./images/media/VSCode_RestrictedMode3.png)</kbd>
-
-        Finally close the pop-up by clicking on **X**.
-        <kbd>![VSCode_RestrictedMode4.png](./images/media/VSCode_RestrictedMode4.png)</kbd>
-
+        <kbd>![Bob_Popup2.png](./images/media/Bob_Popup2.png)</kbd>
 
 
 3. Take a look at the installed extensions
