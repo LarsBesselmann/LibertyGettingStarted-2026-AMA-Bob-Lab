@@ -1138,8 +1138,7 @@ In the section we will outline how AMA Dev Tools can help with the modernization
 
         <kbd>![modresorts_TestAppOnLiberty0a](./images/media/modresorts_TestAppOnLiberty0a.png)</kbd>
 
-
-    3. Expand the Liberty Dashboard and click on **Reload**.
+    3. Expand the Liberty Dashboard and click on **Refresh**.
 
         <kbd>![modresorts_TestAppOnLiberty1](./images/media/modresorts_TestAppOnLiberty1.png)</kbd>
 
@@ -1151,19 +1150,21 @@ In the section we will outline how AMA Dev Tools can help with the modernization
 
         <kbd>![modresorts_TestAppOnLiberty2a](./images/media/modresorts_TestAppOnLiberty2a.png)</kbd>
 
-        <kbd>![modresorts_TestAppOnLiberty2b](./images/media/modresorts_TestAppOnLiberty2b.png)</kbd>
-
     6. Open a browser window and access the application at the URL http://localhost:9080/resorts.
 
         <kbd>![modresorts_unchanged_Liberty1.png](./images/media/modresorts_unchanged_Liberty1.png)</kbd>
 
         Click on **Where to** and select **Paris**. 
 
+        (You might have to put the browser in full-screen to make the panel work.)
+
+        <kbd>![modresorts_unchanged_Liberty1a.png](./images/media/modresorts_unchanged_Liberty1a.png)</kbd>
+
         You should see some errors in the display of weather data.
 
         <kbd>![modresorts_unchanged_Liberty2.png](./images/media/modresorts_unchanged_Liberty2.png)</kbd>
 
-        Switch to VSCode and you should see an error related to **Servername**.)
+        Switch to the IBM Bob IDE and you should see an error related to **Servername**.)
 
         <kbd>![modresorts_unchanged_Liberty2a.png](./images/media/modresorts_unchanged_Liberty2a.png)</kbd>
 
@@ -1177,8 +1178,8 @@ In the section we will outline how AMA Dev Tools can help with the modernization
 
         This confirms that the application cannot run without any change on Liberty with Java 8.
     
-    7. In VS Code, stop the Liberty instance via **Liberty Dashboard**
-        (Right-click on modresorts)
+    7. In the IBM Bob IDE, stop the Liberty instance via **Liberty Dashboard**
+        (Right-click on modresorts). If that does not work, use CTRL-C in the terminal to stop Liberty.
 
         <kbd>![modresorts_TestAppOnLiberty3](./images/media/modresorts_TestAppOnLiberty3.png)</kbd>
 
@@ -1188,12 +1189,10 @@ In the section we will outline how AMA Dev Tools can help with the modernization
 
 
 
+5. Continue with the modernization wizard
 
-
-
-
-
-
+    1. Go back tp the modernization wizard and click on **Approve once** to apply the auztomated fixes.
+    
         <kbd>![Bob_Java_Modernization_Workflow_after_testing.png](./images/media/Bob_Java_Modernization_Workflow_after_testing.png)</kbd>
 
 
@@ -1206,45 +1205,6 @@ In the section we will outline how AMA Dev Tools can help with the modernization
 
         
 
-2. Continue with the modernization wizard
-
-    1. Take again a look at the modernization wizard. 
-    As mentioned before, two of the identified issues are issues that need to be fixed.
-
-        <kbd>![AMA_DevTools_AutomatedFixes1](./images/media/AMA_DevTools_AutomatedFixes1.png)</kbd>
-
-    2. Click on the button **Run automated fixes** to download the recipes and apply the automated fixes. 
-
-        The AMA Dev Tools will download the required recipes and will execute them.
-
-         <kbd>![AMA_DevTools_AutomatedFixes2](./images/media/AMA_DevTools_AutomatedFixes2.png)</kbd>
-
-    3. Wait until the recipes have been applied, then click on **Rebuild and refresh**.
-
-         <kbd>![AMA_DevTools_AutomatedFixes3](./images/media/AMA_DevTools_AutomatedFixes3.png)</kbd>
-
-        The application source code will be rebuilt and scanned to identify which issues have already been resolved and if new issues arised.
-
-    4. Review the updated list of issues.
-    
-        <kbd>![AMA_DevTools_AutomatedFixes4](./images/media/AMA_DevTools_AutomatedFixes4.png)</kbd>
-
-        As you can see, the recipes did not only fix the issues that were listed under **Automated fixes** but also one of the issues listed under **Self-directed fixes**.
-
-    5. Click on **Self-directed fixes** and expand the issue. 
-
-        <kbd>![AMA_DevTools_AutomatedFixes5](./images/media/AMA_DevTools_AutomatedFixes5.png)</kbd>
-
-        As you can see, there is only one issue left.
-        **The WebSphere Servlet API was superseded by a newer implementation**. 
-
-        Click on the issue related to **WebSphere Servlet API** and you can get more details about the issue including document links and a link to the source code. By default, you would now have to read through the documentation to find out how to fix it. But there is an indication that there seems to be a fix in the IBM AI solution called watsonx Code Assistant (and therefore also in the successor IBM Bob.)
-
-        You can also click on the link to see the source.
-        <kbd>![AMA_DevTools_AutomatedFixes6](./images/media/AMA_DevTools_AutomatedFixes6.png)</kbd>
-
-        The solution would be to replace the current encoding mechanism with another one that is supported by Liberty. 
-        You could for example use Apache Commons for this, but this is out of scope for the lab. We leave the issue as is for now.
 
 3. Now that we resolved most of the issues, let's test again if the application now works smoother or still has the errors seen before.
 
