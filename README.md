@@ -1042,7 +1042,7 @@ Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools wi
         <kbd>![Bob_premium_user_Workflows.png](./images/media/Bob_premium_user_Workflows.png)</kbd>
 
 
-### 7.2 Modernize to WebSphere Liberty using IBM Bob
+### 7.2 Modernize modresorts to WebSphere Liberty using IBM Bob
 In the section we will outline how AMA Dev Tools can help with the modernization to Liberty.
 
 1. Start the modernization wizard
