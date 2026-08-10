@@ -875,7 +875,7 @@ You will need the migration plan in the next section.
 
 Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools will help you to apply automated fixes and see the remaining issues in the source code.
 
-### 7.1 Explore the IBM Bob installation and extensions
+### 7.1 Explore the IBM Bob installation and complete setup
 
 1. Initialize git
 
@@ -920,7 +920,7 @@ Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools wi
 
     Finally, close the **Welcome** panel. 
 
-    4. Under settings, you can change the theme. The lab document uses as color **Light+**. Feel free to adjust the theme to your choice. 
+    4. Under settings, you can change the theme. The lab document uses as color **Bob Theme**. Feel free to adjust the theme to your choice. 
 
         <kbd>![Bob_Change_Theme.png](./images/media/Bob_Change_Theme.png)</kbd>
 
@@ -936,23 +936,115 @@ Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools wi
 
     1. Open the Extensions panel
 
-        <kbd>![VSCode_Extensions1.png](./images/media/VSCode_Extensions1.png)</kbd>
+        <kbd>![Bob_Extensions.png](./images/media/Bob_Extensions.png)</kbd>
 
-    2. Click on the extension called **IBM Application Modernization Accelerator Developer Tools** (AMA Dev Tools). The AMA Dev Tools help to analyze the application based on source code. 
+    2. Click on the extension called **Liberty Tools**. The Liberty tools provide an easy way to develop against Liberty
 
-        <kbd>![VSCode_Extensions2.png](./images/media/VSCode_Extensions2.png)</kbd>
-
-        Look at the details, then close the AMA Dev Tools Extensions panel.
-        You might have a newer version displayed.
-
-    3. Click on the extension called **Liberty Tools**. The Liberty tools provide an easy way to develop against Liberty
-
-        <kbd>![VSCode_Extensions3.png](./images/media/VSCode_Extensions3.png)</kbd>
+        <kbd>![Bob_Extension_Liberty.png](./images/media/Bob_Extension_Liberty.png)</kbd>
 
         Look at the details, then close the Liberty Tools Extension panel.
         You might have a newer version displayed.
     
-    You will use both tools during the lab.
+    You will use the Extension during the lab.
+
+4. Log into IBM Bob
+    1. On the right side of the IDE, click on the butto **Log in to Bob** 
+
+        <kbd>![Bob_Login.png](./images/media/Bob_Login.png)</kbd>
+
+    2. On the pop-up, click on **Allow**. 
+
+        <kbd>![Bob_signup.png](./images/media/Bob_signup.png)</kbd>
+
+        Click on **Open**
+
+        <kbd>![Bob_signup2.png](./images/media/Bob_signup2.png)</kbd>
+
+        A browser window will open.
+
+        <kbd>![Bob_signup3.png](./images/media/Bob_signup3.png)</kbd>
+
+    3. Choose a way of login and enter your login credentials.
+
+        <kbd>![Bob_signup4.png](./images/media/Bob_signup4.png)</kbd>
+
+        The example uses SSO with the IBMid.
+
+    4. On the new browser page, select **Open Link**
+
+        <kbd>![Bob_signup5.png](./images/media/Bob_signup5.png)</kbd>
+
+        You should see a panel like this:
+
+        <kbd>![Bob_signup6.png](./images/media/Bob_signup6.png)</kbd>
+
+    5. Switch back to the IBM Bob IDE and you should see a pop-up like this:
+
+        <kbd>![Bob_signup7.png](./images/media/Bob_signup7.png)</kbd>
+
+        Click on **Open**.
+
+        You should now have access to IBM Bob and the IBM Bob chat window:
+
+        <kbd>![Bob_signup8.png](./images/media/Bob_signup8.png)</kbd>
+
+5. Verify that you use an account that has access to the IBM Premium Package for Java Modernization
+
+    1. On the upper right part of the Bob IDE, click on the settings icon.    Then take a look at the account:
+    
+         <kbd>![Bob_premium_user.png](./images/media/Bob_premium_user.png)</kbd>
+      
+        If you have a user with access to the premium package, it is listed under add-ons (see above). 
+        
+    2. Perform these stape if the premium package is not listed.
+
+        <kbd>![Bob_standard_user.png](./images/media/Bob_standard_user.png)</kbd>
+  
+        If you don't see the premium package, your account might be mapped to multiple teams. 
+        
+        Try to switch the setting for **Team** to find the appropriate team.
+
+        <kbd>![Bob_standard_user_team.png](./images/media/Bob_standard_user_team.png)</kbd>
+  
+        If you have multiple accounts, switch the account by log out of IBM Bob and then login again. 
+
+        <kbd>![Bob_Logout.png](./images/media/Bob_Logout.png)</kbd>
+  
+    3. Finally you should have an account that has access to the premium package.
+
+        <kbd>![Bob_premium_user.png](./images/media/Bob_premium_user.png)</kbd>
+    
+6. Install the premium package extension:
+    
+    1. In the list of **Add-ons**, click on the **Install** button.
+    
+        <kbd>![Bob_premium_user_install.png](./images/media/Bob_premium_user_install.png)</kbd>
+    
+    2. In the pop-up, click on **Trust Publisher & Install**.
+    
+        <kbd>![Bob_premium_user_install2.png](./images/media/Bob_premium_user_install2.png)</kbd>
+
+    3. Finally, you should see something like this:
+
+        <kbd>![Bob_premium_user_installed.png](./images/media/Bob_premium_user_installed.png)</kbd>
+
+        As you can see, you could start the modernization workflow from here.
+
+    4. If the Bob Panel on the right is not open, click on the **Bob** icon.
+
+        <kbd>![Bob_Open_Bob_Panel.png](./images/media/Bob_Open_Bob_Panel.png)</kbd>
+
+    
+    5. Click on the workflow icon and take a look at the Bob workflows that are offered. 
+    
+        You should see different workflows including the ones for Java Modernization (which are expaneded in the screenshot below):
+
+        <kbd>![Bob_premium_user_Workflows.png](./images/media/Bob_premium_user_Workflows.png)</kbd>
+
+
+
+    
+
 
 ### 7.2 Modernize to WebSphere Liberty using AMA Dev Tools
 In the section we will outline how AMA Dev Tools can help with the modernization to Liberty.
