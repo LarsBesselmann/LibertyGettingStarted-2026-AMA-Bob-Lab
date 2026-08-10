@@ -905,10 +905,13 @@ Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools wi
 
         2. If you get a pop-up that Authentication is required, click on **Yes, I trust the authors** to continue.
 
-            <kbd>![VSCode_TrustAuthor.png](./images/media/Bob_TrustAuthor.png)</kbd>
+            <kbd>![Bob_TrustAuthor.png](./images/media/Bob_TrustAuthor.png)</kbd>
 
-        3. If you see the panel to sign in for Copilot, close the panel.
-        <kbd>![VSCode_Signup.png](./images/media/VSCode_Signup.png)</kbd>
+        3. If you get a pop-up that a Bob update is available, click on settings and select **Keep current version**.
+
+            <kbd>![Bob_UpdateAvailable.png](./images/media/Bob_UpdateAvailable.png)</kbd>
+
+            <kbd>![Bob_Keep_current_version.png](./images/media/Bob_Keep_current_version.png)</kbd>
 
 
     3. On the Welcome Panel you can open the Walkthrough which allows to change the VS Code settings like theme and other settings. 
