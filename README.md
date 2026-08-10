@@ -901,11 +901,11 @@ Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools wi
     
         1. If you get a pop-up that Authentication is required, enter **IBMDem0s!** in both fields and select **Continue**.
     
-            <kbd>![VSCode_Keyring.png](./images/media/VSCode_Keyring.png)</kbd>
+            <kbd>![Bob_Keyring.png](./images/media/Bob_Keyring.png)</kbd>
 
         2. If you get a pop-up that Authentication is required, click on **Yes, I trust the authors** to continue.
 
-            <kbd>![VSCode_TrustAuthor.png](./images/media/VSCode_TrustAuthor.png)</kbd>
+            <kbd>![VSCode_TrustAuthor.png](./images/media/Bob_TrustAuthor.png)</kbd>
 
         3. If you see the panel to sign in for Copilot, close the panel.
         <kbd>![VSCode_Signup.png](./images/media/VSCode_Signup.png)</kbd>
