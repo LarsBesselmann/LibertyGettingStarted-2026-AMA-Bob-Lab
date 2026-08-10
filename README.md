@@ -1043,10 +1043,7 @@ Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools wi
 
 
 
-    
-
-
-### 7.2 Modernize to WebSphere Liberty using AMA Dev Tools
+### 7.2 Modernize to WebSphere Liberty using IBM Bob
 In the section we will outline how AMA Dev Tools can help with the modernization to Liberty.
 
 1. Start the modernization wizard
