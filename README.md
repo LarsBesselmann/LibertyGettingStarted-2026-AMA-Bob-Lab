@@ -1042,58 +1042,92 @@ Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools wi
         <kbd>![Bob_premium_user_Workflows.png](./images/media/Bob_premium_user_Workflows.png)</kbd>
 
 
+
 ### 7.2 Modernize modresorts to WebSphere Liberty using IBM Bob
 In the section we will outline how AMA Dev Tools can help with the modernization to Liberty.
 
-1. Start the modernization wizard
+1. Start the Java Modernization wizard
 
-    1. Switch to the **Explorer**, right-click on **src** and select **Modernize Java Applications > Modernize to Liberty**
+    1. In the **Bob** panel, click on **Permissions** to see which activities IBM Bob is allowed to do without approval. Set the settings to **Read**.
+    This will allow you to better understand the workflow and decisions.
 
-        <kbd>![AMA_DevTools_ModernizeJavaApps.png](./images/media/AMA_DevTools_ModernizeJavaApps.png)</kbd>
+        <kbd>![Bob_Permissions.png](./images/media/Bob_Permissions.png)</kbd>
 
-    2. An introduction panel is displayed.
+
+    2. In the **Bob** panel, expand the Java Modernization workflow and click on **Start**.
+
+        <kbd>![Bob_Java_Modernization_Workflow_start.png](./images/media/Bob_Java_Modernization_Workflow_start.png)</kbd>
+
+    3. Open the twisties in the **Getting Started** section to get some background.
     
-        <kbd>![AMA_DevTools_ModernizeJavaApps2](./images/media/AMA_DevTools_ModernizeJavaApps2.png)</kbd>
+        <kbd>![Bob_Java_Modernization_Workflow_GettingStarted.png](./images/media/Bob_Java_Modernization_Workflow_GettingStarted.png)</kbd>
+
+        Finally click on **Continue**.
+
+2. Bob prepares the modernization
+
+    1. Bob has detected that the application uses Spring and offers to analyze the application for vulnerabilities. 
+    
+        <kbd>![Bob_Java_Modernization_Workflow_Vulnerabilities.png](./images/media/Bob_Java_Modernization_Workflow_Vulnerabilities.png)</kbd>
+
+        Click on **Approve once**.
+
+    2. Review the vulnerability results by expaning the twisties.
+    
+        <kbd>![Bob_Java_Modernization_Workflow_Vulnerabilities2.png](./images/media/Bob_Java_Modernization_Workflow_Vulnerabilities2.png)</kbd>
+
+        Click on **Approve once**.
+
+    3. Next Bob wants to perform an initial build of the application. 
+    
+        <kbd>![Bob_Java_Modernization_Workflow_InitialBuild.png](./images/media/Bob_Java_Modernization_Workflow_InitialBuild.png)</kbd>
+
+        Click on **Approve once**.
+
+    4. Bob offers different typos of application modernization. Select **Liberty Modernization** and select to **Disable Git Flow**.
+    
+        <kbd>![Bob_Java_Modernization_Workflow_ModernizationType.png](./images/media/Bob_Java_Modernization_Workflow_ModernizationType.png)</kbd>
+
+        Click on **Continue**.
+
+3. Upload and extract Migration plan
+
+    Bob wants to read the AMA migration plan to better understand the modernization target and identified issues. The modernization plan will help to do the modernization in a more deterministic way. 
+    1. Click on **Select File**
+
+        <kbd>![Bob_Java_Modernization_Workflow_Request_migrationplan.png](./images/media/Bob_Java_Modernization_Workflow_Request_migrationplan.png)</kbd>
+
+    2. Click on **Downloads**, then select the migration plan and click on  **Select File**
+
+        <kbd>![Bob_Java_Modernization_Workflow_Upload_migrationplan.png](./images/media/Bob_Java_Modernization_Workflow_Upload_migrationplan.png)</kbd>
+
+    3. Verify that the migration plan has been selected and click on  **Continue**
+
+        <kbd>![Bob_Java_Modernization_Workflow_Uploaded_migrationplan.png](./images/media/Bob_Java_Modernization_Workflow_Uploaded_migrationplan.png)</kbd>
+
+    4. Bob extracts the migration plan and wants to save the Liberty server configuration file server.xml as well as the Containerfile. Click on  **Approve once** for server.xml as well as for Containerfile.
+
+        <kbd>![Bob_Java_Modernization_Workflow_Extract_migrationplan.png](./images/media/Bob_Java_Modernization_Workflow_Extract_migrationplan.png)</kbd>
+
+        <kbd>![Bob_Java_Modernization_Workflow_Extract_migrationplan2.png](./images/media/Bob_Java_Modernization_Workflow_Extract_migrationplan2.png)</kbd>
+
+    5. Bob has analyzed the AMA reports and knows which issues have been identified. As  next step, IBM Bob wants to download the recipes for the automated fixes.
+    Before applying the fixes, let's take a look at the application as is.
+    DO NOT CLICK on Approve as 
+
+        <kbd>![Bob_Java_Modernization_Workflow_Analyze_AMA_reports.png](./images/media/Bob_Java_Modernization_Workflow_Analyze_AMA_reports.png)</kbd>
 
 
+4. Test the application on Liberty
 
-    2. Click on **Upload migration plan**
-
-        <kbd>![AMA_DevTools_Upload_Migrationplan](./images/media/AMA_DevTools_Upload_Migrationplan.png)</kbd>
-
-
-    3. Select the migration plan from the **Downloads** directory.
-
-        <kbd>![AMA_DevTools_Upload_Migrationplan2](./images/media/AMA_DevTools_Upload_Migrationplan2.png)</kbd>
-
-        Click on **Open**.
-
-    4. Keep the **server.xml** file selected and click on **Proceed**.
-
-        <kbd>![AMA_DevTools_Upload_Migrationplan3](./images/media/AMA_DevTools_Upload_Migrationplan3.png)</kbd>
-
-    5. AMA Dev Tools display the issues and for which of them automated fixes exist.
-
-        <kbd>![AMA_DevTools_Issues_Overview](./images/media/AMA_DevTools_Issues_Overview.png)</kbd>
-
-
-        As you can see, there are automated fix available for:
-        - **Use the default InitialContext JNDI properties**
-        - **Getting the server name on Liberty**
-        - **Avoid using the deprecated WSSecurityHelper revokeSSOCookies and getLTPACookieFromSSOToken methods**
-
-        
-
-2. Test the application on Liberty
-
-    As the tool does a static analysis, it cannot detect if the identified issues really need to be fixed or in unused code.
+    As the tool does a static analysis, it cannot detect if the identified issues really need to be fixed or are located in unused code.
     Therefore, before continuing with the modernization, let's try to run the application as is on Liberty.
 
-    1. Open a VS Code Terminal
+    1. Open a new terminal in Bob
 
-        <kbd>![VSCode_Open_Terminal](./images/media/VSCode_Open_Terminal.png)</kbd>
+        <kbd>![Bob_New_Terminal](./images/media/Bob_New_Terminal.png)</kbd>
 
-    2. Configure Liberty to use Java 8. This is done via the Liberty configuration file **server.env**.
+    2. Configure Liberty to use Java 8. This is done via the Liberty configuration file **server.env**. Copy the following commandinto the terminal
 
             cd ~/Student/modresorts-project
             echo "JAVA_HOME=/usr/lib/jvm/ibm-semeru-open-8-jdk" >> src/main/liberty/config/server.env
@@ -1152,6 +1186,25 @@ In the section we will outline how AMA Dev Tools can help with the modernization
 
         <kbd>![modresorts_TestAppOnLiberty4](./images/media/modresorts_TestAppOnLiberty4.png)</kbd>
 
+
+
+
+
+
+
+
+
+        <kbd>![Bob_Java_Modernization_Workflow_after_testing.png](./images/media/Bob_Java_Modernization_Workflow_after_testing.png)</kbd>
+
+
+
+
+        As you can see, there are automated fix available for:
+        - **Use the default InitialContext JNDI properties**
+        - **Getting the server name on Liberty**
+        - **Avoid using the deprecated WSSecurityHelper revokeSSOCookies and getLTPACookieFromSSOToken methods**
+
+        
 
 2. Continue with the modernization wizard
 
