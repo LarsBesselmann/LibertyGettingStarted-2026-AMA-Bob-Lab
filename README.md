@@ -1249,7 +1249,7 @@ In the section we will outline how AMA Dev Tools can help with the modernization
 
             Click on **Approve once** to continue. 
 
-        6. Bob has completed the Too list and wants to proceed.
+        6. Bob has completed the Todo list and wants to proceed.
 
             <kbd>![Bob_Fix_WebSphere_Runtimes6.png](./images/media/Bob_Fix_WebSphere_Runtimes6.png)</kbd>
 
@@ -1300,31 +1300,27 @@ In the section we will outline how AMA Dev Tools can help with the modernization
 
             Then press ENTER or click the icon.    
 
+        4. Bob comes back with a list of different alternatives.
 
+            <kbd>![Bob_Fix_WebSphere_ServletAPI5.png](./images/media/Bob_Fix_WebSphere_ServletAPI5.png)</kbd>
 
-            Click on **Approve once** to continue. 
+            Select **Apache Commons** by clicking on the related field.
 
-        4. Bob verified that the code was already changed (by the recipses), so no further action is required. Therefore Bob wants to compile the code and verify it.
+        5. Bob wants to edit the pom.xml.
 
-            <kbd>![Bob_Fix_WebSphere_Runtimes4.png](./images/media/Bob_Fix_WebSphere_Runtimes4.png)</kbd>
+            <kbd>![Bob_Fix_WebSphere_ServletAPI6.png](./images/media/Bob_Fix_WebSphere_ServletAPI6.png)</kbd>
 
-            Click on **Approve once** to continue. 
+            As reduce the number of approvals for the task, click on **Approve edit tools for task** to continue. 
     
-        5. Bob wants to execute the command "mvn compile". 
+        6. Bob wants to execute the command "mvn compile". 
 
-            <kbd>![Bob_Fix_WebSphere_Runtimes5.png](./images/media/Bob_Fix_WebSphere_Runtimes5.png)</kbd>
+            <kbd>![Bob_Fix_WebSphere_ServletAPI7.png](./images/media/Bob_Fix_WebSphere_ServletAPI7.png)</kbd>
 
-            Click on **Approve once** to continue. 
-
-        6. Bob has completed the Too list and wants to proceed.
-
-            <kbd>![Bob_Fix_WebSphere_Runtimes6.png](./images/media/Bob_Fix_WebSphere_Runtimes6.png)</kbd>
-
-            Click on **Approve once** to continue. 
+            Click on **Approve for task** to continue. 
 
         7. Bob wants to create a summary what has been done in the subtask.
 
-            <kbd>![Bob_Fix_WebSphere_Runtimes7.png](./images/media/Bob_Fix_WebSphere_Runtimes7.png)</kbd>
+            <kbd>![Bob_Fix_WebSphere_ServletAPI8.png](./images/media/Bob_Fix_WebSphere_ServletAPI8.png)</kbd>
 
             Click on **Approve once** to continue. 
 
@@ -1334,10 +1330,128 @@ In the section we will outline how AMA Dev Tools can help with the modernization
             <kbd>![Bob_Fix_WebSphere_Runtimes8.png](./images/media/Bob_Fix_WebSphere_Runtimes8.png)</kbd>
 
 
+    3. Bob has completed the Liberty replatforming tasks. Let's review the performed tasks and validate the changes.
+    
+        1. Review what has been done so far:
+    
+            <kbd>![Bob_Replatforming_Summary.png](./images/media/Bob_Replatforming_Summary.png)</kbd>
 
     
+        2. The next step is to deploy and validate.
 
-    Click on **Approve once** to allow Bob to fix the issues around WebSphere Runtime APIs and SPIs.
+            <kbd>![Bob_Start_Deployment.png](./images/media/Bob_Start_Deployment.png)</kbd>
+
+            Click on **Start local deployment**.
+
+        3. Bob will ask for permission to start a subtask.
+
+            <kbd>![Bob_Start_Deployment1.png](./images/media/Bob_Start_Deployment1.png)</kbd>
+
+            Click on **Approve once** to continue. 
+
+        4. Bob will ask for permission to build the application.
+
+            <kbd>![Bob_Start_Deployment2.png](./images/media/Bob_Start_Deployment2.png)</kbd>
+
+            Click on **Approve once** to continue. 
+
+        5. Bob rebuilt the application and will ask again for permission to install the application.
+
+            <kbd>![Bob_Start_Deployment3.png](./images/media/Bob_Start_Deployment3.png)</kbd>
+
+            Click on **Approve for task** to continue. 
+
+        6. Bob wants to clean up the Liberty installation.
+
+            <kbd>![Bob_Start_Deployment4.png](./images/media/Bob_Start_Deployment4.png)</kbd>
+
+            Click on **Approve for task** to continue. 
+        
+        7. Bob wants to install the required Liberty features.
+
+            <kbd>![Bob_Start_Deployment5.png](./images/media/Bob_Start_Deployment5.png)</kbd>
+
+            Click on **Approve for task** to continue. 
+        
+        8. Bob wants to backup the server configuration and adjust it.
+
+            <kbd>![Bob_Start_Deployment6.png](./images/media/Bob_Start_Deployment6.png)</kbd>
+
+            Click on **Approve for task** to continue. 
+
+        9. Bob wants to deploy the application.
+
+            <kbd>![Bob_Start_Deployment7.png](./images/media/Bob_Start_Deployment7.png)</kbd>
+
+            Click on **Approve for task** to continue. 
+
+        10. Bob wants to start the Liberty instance.
+
+            <kbd>![Bob_Start_Deployment8.png](./images/media/Bob_Start_Deployment8.png)</kbd>
+
+            Click on **Approve for task** to continue. 
+
+        11. Bob started Liberty and the application, analyzed the logs and detected some configuration issues. Therefore Bob wants to stop the Liberty instance to clean up the Liberty configuration.
+
+            <kbd>![Bob_Start_Deployment9.png](./images/media/Bob_Start_Deployment9.png)</kbd>
+
+            Click on **Approve for task** to continue. 
+
+        12. Bob started Liberty again and did some reconfiguration using Liberty hot-reloading. Now Bob wants to test the endpoints via curl:
+
+            <kbd>![Bob_Start_Deployment10.png](./images/media/Bob_Start_Deployment10.png)</kbd>
+
+            Click on **Approve for task** to continue. 
+
+        13. Bob tested the first endpoint successfully and wants to test additional endpoints via curl:
+        
+            <kbd>![Bob_Start_Deployment11.png](./images/media/Bob_Start_Deployment11.png)</kbd>
+
+            Click on **Approve for task** to continue. 
+
+        14. Bob tested additional endpoints successfully and wants to test additional endpoints via curl:
+        
+            <kbd>![Bob_Start_Deployment12.png](./images/media/Bob_Start_Deployment12.png)</kbd>
+
+            Click on **Approve for task** to continue. 
+
+        15. Bob tested additional endpoints successfully and got some errors. Therefore Bob wants to test additional endpoints via curl:
+        
+            <kbd>![Bob_Start_Deployment13.png](./images/media/Bob_Start_Deployment13.png)</kbd>
+
+            Click on **Approve for task** to continue. 
+
+        16. Bob tested all endpoints successfully. Now it asks you to review the logs. 
+        
+            <kbd>![Bob_Start_Deployment14.png](./images/media/Bob_Start_Deployment14.png)</kbd>
+
+            Feel free to do so, you can find them under 
+            Exlorer > target/liberty/wlp/usr/servers/modresorts/logs/messages.log
+        
+            Then click on **Yes, the application started successfully with no errors** to continue. 
+
+
+        17. Bob wants to create a summary. 
+        
+            <kbd>![Bob_Start_Deployment15.png](./images/media/Bob_Start_Deployment15.png)</kbd>
+
+            Click on **Approve for task** to continue. 
+
+        18. Bob created a visual summary. 
+        
+            <kbd>![Bob_Visual_Summary.png](./images/media/Bob_Visual_Summary.png)</kbd>
+
+            Click on the visual summary to expand the diagram. 
+
+            <kbd>![Bob_Mermaid_Diagram](./images/media/Bob_Mermaid_Diagram.png)</kbd>
+
+            
+        19. Open the browser and tes the application at http://locahost:9080/resorts.
+
+        Walk to **Where To** and **Log out** to verify, that the initial issues are resolved.
+
+
+
 
 
 
