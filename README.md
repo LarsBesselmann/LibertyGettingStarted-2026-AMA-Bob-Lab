@@ -1213,10 +1213,140 @@ In the section we will outline how AMA Dev Tools can help with the modernization
 
         <kbd>![Bob_git_compare.png](./images/media/Bob_git_compare2.png)</kbd>
 
-        
+3. Now that Bob resolved via recipes the issues with automated fixes, Bob will take a look at the remaining issues and will use agentic AI to resolve them.
+
+    1. Fix the issues around **WebSphere Runtime APIs and SPIs**
+
+        1. Bob wants to starts a new subtask to fix the issues around the WebSphere Runtime APIs and SPIs.
+
+            <kbd>![Bob_Fix_WebSphere_Runtimes.png](./images/media/Bob_Fix_WebSphere_Runtimes.png)</kbd>
+
+            Click on **Approve once** to continue. 
+
+        2. Bob creates a subtask and a Todo list  to fix the issue based on the recommendations from the AMA migration plan.
+
+            <kbd>![Bob_Fix_WebSphere_Runtimes2.png](./images/media/Bob_Fix_WebSphere_Runtimes2.png)</kbd>
+
+            Review the Todo list (you could also edit it if needed). 
+            Click on **Approve once** to continue. 
 
 
-3. Now that we resolved most of the issues, let's test again if the application now works smoother or still has the errors seen before.
+        3. Bob detects that the critical code no longer exists in the WeatherServlet. It wants to review the changes in git to understand why.
+
+            <kbd>![Bob_Fix_WebSphere_Runtimes3.png](./images/media/Bob_Fix_WebSphere_Runtimes3.png)</kbd>
+
+            Click on **Approve once** to continue. 
+
+        4. Bob verified that the code was already changed (by the recipses), so no further action is required. Therefore Bob wants to compile the code and verify it.
+
+            <kbd>![Bob_Fix_WebSphere_Runtimes4.png](./images/media/Bob_Fix_WebSphere_Runtimes4.png)</kbd>
+
+            Click on **Approve once** to continue. 
+    
+        5. Bob wants to execute the command "mvn compile". 
+
+            <kbd>![Bob_Fix_WebSphere_Runtimes5.png](./images/media/Bob_Fix_WebSphere_Runtimes5.png)</kbd>
+
+            Click on **Approve once** to continue. 
+
+        6. Bob has completed the Too list and wants to proceed.
+
+            <kbd>![Bob_Fix_WebSphere_Runtimes6.png](./images/media/Bob_Fix_WebSphere_Runtimes6.png)</kbd>
+
+            Click on **Approve once** to continue. 
+
+        7. Bob wants to create a summary what has been done in the subtask.
+
+            <kbd>![Bob_Fix_WebSphere_Runtimes7.png](./images/media/Bob_Fix_WebSphere_Runtimes7.png)</kbd>
+
+            Click on **Approve once** to continue. 
+
+        8. Bob has created the summary what has been done in the subtask.
+            You can expand the section to see the details.
+
+            <kbd>![Bob_Fix_WebSphere_Runtimes8.png](./images/media/Bob_Fix_WebSphere_Runtimes8.png)</kbd>
+
+
+    2. Fix the issues around **WebSphere Servlet API**
+
+        1. Bob wants to starts a new subtask to fix the issues around the WebSphere Servlet API. 
+
+            <kbd>![Bob_Fix_WebSphere_ServletAPI1.png](./images/media/Bob_Fix_WebSphere_ServletAPI1.png)</kbd>
+
+            Click on **Approve once** to get continue. 
+
+
+
+        2. Bob creates a subtask and a Todo list  to fix the issue based on the recommendations from the AMA migration plan.
+
+            <kbd>![Bob_Fix_WebSphere_ServletAPI2.png](./images/media/Bob_Fix_WebSphere_ServletAPI2.png)</kbd>
+
+            Review the Todo list (you could also edit it if needed). 
+            To reduce the number of approvals, you can allow Bob to update the Todo list for the subtask without approval. 
+            Click on **Approve todo tools for task** to continue. 
+
+
+        3. Bob explains the issue and proposes a solution based on Apache Commons.
+
+            <kbd>![Bob_Fix_WebSphere_ServletAPI3.png](./images/media/Bob_Fix_WebSphere_ServletAPI3.png)</kbd>
+
+            You can select to apply the recommended changes or to use a different approach. Let's see which different approaches are available.
+
+            Enter in the chat window the following text to get alternatives:
+
+                What are the alternatives?
+
+            <kbd>![Bob_Fix_WebSphere_ServletAPI4.png](./images/media/Bob_Fix_WebSphere_ServletAPI4.png)</kbd>
+
+            Then press ENTER or click the icon.    
+
+
+
+            Click on **Approve once** to continue. 
+
+        4. Bob verified that the code was already changed (by the recipses), so no further action is required. Therefore Bob wants to compile the code and verify it.
+
+            <kbd>![Bob_Fix_WebSphere_Runtimes4.png](./images/media/Bob_Fix_WebSphere_Runtimes4.png)</kbd>
+
+            Click on **Approve once** to continue. 
+    
+        5. Bob wants to execute the command "mvn compile". 
+
+            <kbd>![Bob_Fix_WebSphere_Runtimes5.png](./images/media/Bob_Fix_WebSphere_Runtimes5.png)</kbd>
+
+            Click on **Approve once** to continue. 
+
+        6. Bob has completed the Too list and wants to proceed.
+
+            <kbd>![Bob_Fix_WebSphere_Runtimes6.png](./images/media/Bob_Fix_WebSphere_Runtimes6.png)</kbd>
+
+            Click on **Approve once** to continue. 
+
+        7. Bob wants to create a summary what has been done in the subtask.
+
+            <kbd>![Bob_Fix_WebSphere_Runtimes7.png](./images/media/Bob_Fix_WebSphere_Runtimes7.png)</kbd>
+
+            Click on **Approve once** to continue. 
+
+        8. Bob has created the summary what has been done in the subtask.
+            You can expand the section to see the details.
+
+            <kbd>![Bob_Fix_WebSphere_Runtimes8.png](./images/media/Bob_Fix_WebSphere_Runtimes8.png)</kbd>
+
+
+
+    
+
+    Click on **Approve once** to allow Bob to fix the issues around WebSphere Runtime APIs and SPIs.
+
+
+
+
+
+
+
+
+
 
     1. Navigate to the Liberty Dashboard.
     2. Right-click on **modresorts** and select **Start** to start the application on Liberty
