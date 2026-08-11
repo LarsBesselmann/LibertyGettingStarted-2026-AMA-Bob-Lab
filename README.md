@@ -1445,55 +1445,24 @@ In the section we will outline how AMA Dev Tools can help with the modernization
 
             <kbd>![Bob_Mermaid_Diagram](./images/media/Bob_Mermaid_Diagram.png)</kbd>
 
+            As you can see, the diagram contains details about the performed modernization as well as details about the costs and tokens for the different tasks.
+
             
-        19. Open the browser and tes the application at http://locahost:9080/resorts.
-
-        Walk to **Where To** and **Log out** to verify, that the initial issues are resolved.
-
-
-
-
-
-
-
-
-
-
-
-
-
-    1. Navigate to the Liberty Dashboard.
-    2. Right-click on **modresorts** and select **Start** to start the application on Liberty
-
-        <kbd>![modresorts_TestAppOnLiberty2](./images/media/modresorts_TestAppOnLiberty2.png)</kbd>
-
-    3. Wait until the server has been started. 
+        19. Open the browser and test the application to verify, that the initial issues are resolved. 
         
-        <kbd>![AMA_Liberty_Started.png](./images/media/AMA_Liberty_Started.png)</kbd>
+            In the browser, open the URL http://localhost:9080/resorts.
+            Then navigate to **Where To > Paris** to verify that the error is gone. Do the same with the **Logout** button. 
 
-    4. Open a browser window and access the application at the URL http://localhost:9080/resorts.
+        20. Switch back to Bob and ask Bob to stop the Liberty instance.
 
-        <kbd>![modresorts_modernized_Liberty1.png](./images/media/modresorts_modernized_Liberty1.png)</kbd>
+                Stop Liberty
 
-        Click on **Where to** and select **Paris**. 
+            <kbd>![Bob_Stop_Liberty](./images/media/Bob_Stop_Liberty.png)</kbd>
 
-        You should no longer see any errors in the display of weather data.
-
-        <kbd>![modresorts_modernized_Liberty2.png](./images/media/modresorts_modernized_Liberty2.png)</kbd>
-
-        Click on **Logout** and you should no longer see an error.
-
-        <kbd>![modresorts_modernized_Liberty3.png](./images/media/modresorts_modernized_Liberty3.png)</kbd>
-
-        This confirms that the application has been modified to run on Liberty with Java 8. The remaining issue might be required to be resolved but this is out of scope of the lab.
-    
-    7. In VS Code, stop the Liberty instance via **Liberty Dashboard**
-        (Right-click on modresorts)
-
-        <kbd>![modresorts_TestAppOnLiberty3](./images/media/modresorts_TestAppOnLiberty3.png)</kbd>
+            Wait until the Liberty instacne has stopped.
 
 
-### 7.3 Perform a Java upgrade using AMA Dev Tools
+### 7.3 Perform a Java upgrade using IBM Bob
 The AMA Dev Tools have another capability next to "Modernize to Liberty" and this is "Java Upgrade".
 
 1. Start the modernization wizard
