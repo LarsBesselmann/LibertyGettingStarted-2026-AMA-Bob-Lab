@@ -1459,27 +1459,15 @@ In the section we will outline how AMA Dev Tools can help with the modernization
 
             <kbd>![Bob_Stop_Liberty](./images/media/Bob_Stop_Liberty.png)</kbd>
 
-            Wait until the Liberty instacne has stopped.
+            Wait until the Liberty instance has stopped.
 
 
 ### 7.3 Perform a Java upgrade using IBM Bob
-The AMA Dev Tools have another capability next to "Modernize to Liberty" and this is "Java Upgrade".
 
-1. Start the modernization wizard
+To Be Done
 
-    1. Switch to the **Explorer**, right-click on **src** and select **Modernize Java Applications > Upgrade Java E and Java EE/Jakarta EE**
 
-        <kbd>![AMA_DevTools_JavaUpgrade1.png](./images/media/AMA_DevTools_JavaUpgrade1.png)</kbd>
-
-    2. An introduction panel is displayed.
-
-        As you can see in the screenshot, you could update to a higher Java SE or/and Java EE level if you would have a full access key.
-    
-        <kbd>![AMA_DevTools_JavaUpgrade2](./images/media/AMA_DevTools_JavaUpgrade2.png)</kbd>.
-
-        Alternatively you could go back to AMA, change the target to the desired Java SE and EE level and generate a new migration plan.
-      
-You should now have a good understanding what the AMA Dev Tools provide. So, close the modernization panel.  
+You should now have a good understanding how IBM Bob can help to modernize your applications. 
 
 ### 7.4 Recap
 
@@ -1488,10 +1476,10 @@ Congratulations, you have finished the application modernization part.
 **Let’s recap what you did so far.** 
 
 - You tested the unchanged application on Liberty to validate that the identified issues cause runtime errors and need to be fixed.
-- You used the AMA Dev Tools to apply automated fixes
-- You used the AMA Dev Tools to see how to handle self-directed fixes
+- You used the IBM Bob to apply automated fixes via fixes
+- You used the IBM Bob to apply agentic AI to fix the remaining issues. 
 - You tested successfully the modernized application on Liberty
-- You got an idea how to use the AMA Dev Tools to upgrade the Java SE or Java EE level of the application.
+- You got an idea how to use IBM Bob to upgrade the Java SE or Java EE level of the application.
 
 
 
