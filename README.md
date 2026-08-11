@@ -1191,17 +1191,27 @@ In the section we will outline how AMA Dev Tools can help with the modernization
 
 5. Continue with the modernization wizard
 
-    1. Go back tp the modernization wizard and click on **Approve once** to apply the auztomated fixes.
-    
+    1. Go back tp the modernization wizard and click on **Approve once** to apply the automated fixes.
+
         <kbd>![Bob_Java_Modernization_Workflow_after_testing.png](./images/media/Bob_Java_Modernization_Workflow_after_testing.png)</kbd>
 
+    2. The recipes will be applied. Wait until the process has completed.
 
+        <kbd>![Bob_Recipes_applied.png](./images/media/Bob_Recipes_applied.png)</kbd>
 
+    3. Click on **Recipes applied** to see more details.
 
-        As you can see, there are automated fix available for:
-        - **Use the default InitialContext JNDI properties**
-        - **Getting the server name on Liberty**
-        - **Avoid using the deprecated WSSecurityHelper revokeSSOCookies and getLTPACookieFromSSOToken methods**
+        <kbd>![Bob_Recipes_applied_details.png](./images/media/Bob_Recipes_applied_details.png)</kbd>
+
+        You can see that the LogoutServlet.java and the Weatherservlet.java have been changed. 
+    
+    4. To better compare what has changed, switch to the **Source Control** view and compare the files.
+
+        <kbd>![Bob_git_compare.png](./images/media/Bob_git_compare.png)</kbd>
+
+    5. After reviewing the changes, close the comparison.
+
+        <kbd>![Bob_git_compare.png](./images/media/Bob_git_compare2.png)</kbd>
 
         
 
