@@ -1513,7 +1513,7 @@ In the section we will outline how AMA Dev Tools can help with the modernization
     
         Finally set the **Bob Settings** panel
 
-        <kbd>![Bob_Settings_close.png](./images/media/Bob_Settings_close.png)</kbd>
+        <kbd>![Bob_Settings_Close.png](./images/media/Bob_Settings_Close.png)</kbd>
     
 
 
@@ -1654,7 +1654,7 @@ Now let's take a look at the Java Upgrade workflow.
 
     If you see an error as in the screenshot above, take a look at the logs
 
-    <kbd>![Bob_Java21_MBean_Issue_logs.png](./images/media/Bob_Java21_MBean_Issue_logs.png)</kbd>
+    <kbd>![Bob_Java21_MBean_Issue_Logs.png](./images/media/Bob_Java21_MBean_Issue_Logs.png)</kbd>
 
     Stop the Liberty instance using the Liberty Dashboard or CTRL-C in the terminal. 
 
