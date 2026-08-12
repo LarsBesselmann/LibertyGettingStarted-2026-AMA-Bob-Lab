@@ -714,6 +714,8 @@ Congratulations, you have finished the application assessment part.
 
 
 ### 6.9 Troubleshooting
+<details>
+<Summary> Please open if you run into issues </Summary>
 
 You will need the migration plan in the next section. 
 
@@ -753,6 +755,7 @@ You will need the migration plan in the next section.
 
 
 <br>
+</details>
 
 ## 7. Use the IBM Bob Premium Package for Java Modernization
 
@@ -1596,7 +1599,7 @@ In this lab, you learned how to assess a WebSphere application using IBM Applica
 
 **You have successfully completed the lab "Application Modernization Accelerator"**
 
-# Appendixy
+# Appendix
 <details>
 <summary>Additional Information</summary>
 
@@ -1844,3 +1847,4 @@ This section explains how to apply the access key via AMA User Interface. You co
     <kbd>![AMA_Evaluation_Assessment-modresorts4b.png](./images/media/AMA_Evaluation_Assessment-modresorts4b.png)</kbd>
     
     **This capability is not available with the trial access key.**
+</details>
