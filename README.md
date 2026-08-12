@@ -73,7 +73,7 @@ The following software has been installed:
 
 
 ## 5. Explore Application Modernization Accelerator
-In this section, you will explore the main capabilities of Application Modernization Accelerator. You will use the sample data that is shipped with the product. 
+In this section, you will get a brief overview how to explore the main capabilities of Application Modernization Accelerator using the sample data that is shipped with the product. You can find more details on the appendix.
 
 ### 5.1 Start AMA
 
@@ -110,9 +110,21 @@ Let's check if AMA is already started. This can be validated by reviewing if the
     Wait until AMA has started and the URL is displayed
     <kbd>![AMA_Launcher_stopped](./images/media/AMA_Launcher_started.png)</kbd>
 
+3. Create a demo workspace with sample data via the following command:
 
-To explore the AMA User Interface, you will create a workspace with sample data. A workspace is a designated area that will house the migration recommendations provided by AMA for existing applications and/or environments. You can name and organize these however you want, whether it’s by business application, location, or teams.
-Later on, you will create another workspace for the WebSphere landscape used in this lab environment.
+        curl -k -X 'POST' \
+        'https://localhost:2220/lands_advisor/advisor/v2/collectionArchives/uploadSampleData' \
+          -H 'accept: */*' \
+          -H 'locale: en' \
+          -H 'workspaceName: Sample_Data' \
+          -d ''
+
+    A workspace is a designated area that will house the migration recommendations provided by AMA for existing applications and/or environments. 
+
+
+### 5.2 Access the AMA User Interface
+
+This section will give a brief overview how to use the AMA User interface. You can find more details in the appendix.
 
 1. Access the AMA UI and create a workspace with sample applications.
     1. Open a browser window by clicking on **Activities** and then select the **Firefox** browser icon.
@@ -137,33 +149,22 @@ Later on, you will create another workspace for the WebSphere landscape used in 
         Click through the wizard and finally close it.
         Your screen should now look like this:
 
-        <kbd>![AMA_Initial_Screen](./images/media/AMA_Initial_Screen.png)</kbd>
+        <kbd>![AMA_Initial_Screen](./images/media/AMA_Initial_Screen2.png)</kbd>
     
-
-    3. Click on the button **Create workspace** and enter **Sample_Data**, select **include sample data**, then click on **Create**.
-
-        <kbd>![AMA_Workspace_Sample_Data](./images/media/AMA_Workspace_Sample_Data.png)</kbd>
-    
-    4. The workspace will be created.
-        <kbd>![AMA_Workspace_Sample_Data](./images/media/AMA_Workspace_Sample_Data_create.png)</kbd>
-    
-    5. Wait until the workspace has been created which can take a minute or so. Finally, you will see that the workspace has been created and contains 29 sample applications, 7 databases and 9 queues.
-        <kbd>![AMA_Workspace_Sample_Data_created](./images/media/AMA_Workspace_Sample_Data_created.png)</kbd>
+        A workspace named **Sample_Data** is available and contains 29 sample applications, 7 databases and 9 queues.
     
 2. Explore the workspace with the sample applications
 
     1. Click on the workspace to open it.
 
-    2. AMA supports three destinations, **Liberty**, **MoRE** and **WebSphere Application Server** (Traditional)
+    2. AMA supports three destinations, **Liberty**, **MoRE** (Modernized Runtime Extension for Java) and **WebSphere Application Server** (Traditional)
     
-        <kbd>![AMA_Select_Destination](./images/media/AMA_Select_Destination.png)</kbd>
-    
-    3. Select **Liberty** as destination and click on **Confirm**.
+        Select **Liberty** as destination and click on **Confirm**.
     
         <kbd>![AMA_Select_Liberty](./images/media/AMA_Select_Liberty.png)</kbd>
     
 
-    4. The **Visualization** panel shows all applications and how they relate to each other regarding common databases or queues.
+    3. The **Visualization** panel shows all applications and how they relate to each other regarding common databases or queues.
 
         As this is a AMA trial version, a pop-up will be shown in the upper right. Close the pop-up.
 
@@ -171,29 +172,22 @@ Later on, you will create another workspace for the WebSphere landscape used in 
 
         Now zoom in to see the application names.
 
-
         <kbd>![AMA_Visualization_SampleData_Increased](./images/media/AMA_Visualization_SampleData_Increased.png)</kbd>
-    
-        You can filter by name to see only specific applications and dependencies. (For example, filter for the application ACME.)
-
-        <kbd>![AMA_Visualization_Filter_by_Name](./images/media/AMA_Visualization_Filter_by_Name.png)</kbd>
-    
-        You can also filter by library to see only specific applications and dependencies. (For example, filter for Spring libraries.)
+        
+        You can filter by library to see only specific applications and dependencies. (For example, filter for Spring libraries.)
 
         <kbd>![AMA_Visualization_Filter_by_Library](./images/media/AMA_Visualization_Filter_by_Library.png)</kbd>
     
-    As you can see in the screenshot above, the visualization provides insight which applications share the same database or queue which helps to shape your migration strategy.
+        As you can see in the screenshot above, the visualization provides insight which applications share the same database or queue which helps to shape your migration strategy.
 
-
-
-    5. Switch to the **Assessment** tab 
+    4. Switch to the **Assessment** tab 
 
         <kbd>![AMA_Assessment_Tab](./images/media/AMA_Assessment_Tab.png)</kbd>
     
         The assessment tab provides insight into the different applications.
         <kbd>![AMA_Assessment_Overview](./images/media/AMA_Assessment_Overview.png)</kbd>
     
-    6. Take a look at the upper part
+    5. Take a look at the upper part
 
         <kbd>![AMA_Assessment_Total.png](./images/media/AMA_Assessment_Total.png)</kbd>
 
@@ -202,13 +196,13 @@ Later on, you will create another workspace for the WebSphere landscape used in 
         
         Total cost is the number of days of development cost to migrate that code to run on the selected migration target. In this example, WebSphere Liberty is the selected migration target.
 
-    7. Change the Java SE Level and the Java EE level to find out how the overall effort changes. As you can see the estimated efforts change.
+    6. Change the Java SE Level and the Java EE level to find out how the overall effort changes. As you can see the estimated efforts change.
 
         <kbd>![AMA_Assessment_Total2.png](./images/media/AMA_Assessment_Total2.png)</kbd>
 
         Finally, change the Java SE and Java EE level back to the minimum to see the efforts for the quickest path of modernization.
 
-    8. Take a look further down at the application list.
+    7. Take a look further down at the application list.
 
         <kbd>![AMA_Assessment_Application_List.png](./images/media/AMA_Assessment_Application_List.png)</kbd>
     
@@ -224,26 +218,13 @@ Later on, you will create another workspace for the WebSphere landscape used in 
         - Application cost (in days)
         - Migration plan
 
-        The following details are included in the summary table (this is the per-application view):
+    You will look into this further in the next section.   
 
-        - Application Name: The name of the EAR/WAR file found on the application server.
 
-        - Collection/Profile: Collection represents the hostname of the machine where the application resides. The profile represents the profile name in the application server where the application is installed.
-
-        - Complexity: Indicates how complex Transformation Advisor considers this application to be if you were to migrate it to the cloud.
-
-        - Issues: The number and severity of potential issues with the migration of the application.
-
-        - Required code changes: Indicates the type of code change needed.
-
-        - Application cost in days: Provides an estimate in days for the development effort to perform the migration for just this application. Cost estimates calculated by Transformation Advisor are high-level estimates only and may vary widely based on skills and other factors not considered by the tool.
-
-        - Migration plan: accelerator files generated by Transformation advisor to aide in building and deploying the selected application to the target runtime.
-
-    9. Feel free to expand the one or other app to see more details about an application.
-        <kbd>![AMA_Assessment_Application_Expanded.png](./images/media/AMA_Assessment_Application_Expanded.png)</kbd>
-    
-
+### 5.3 Explore the AMA APIs
+Application Modernization Accelerator (AMA) also provides Swagger interfaces to access some of the data via APIs. 
+You already used one of it when you created a demo workspace with sample data.
+If you are interested into details about the APIs, take a look at the appendix.
 
 
 ## 6. Build and analyze the modresorts application.
@@ -299,7 +280,7 @@ The objective of this section is to assess the simple-pharmacy application that 
 
 2. Install the required WAS library
 
-       cd ~/Student/modresorts-project/
+        cd ~/Student/modresorts-project/
 
        mvn install:install-file -Dfile=/home/itzuser/usr/IBM/WebSphere/AppServer/dev/was_public.jar -DpomFile=/home/itzuser/usr/IBM/WebSphere/AppServer/dev/was_public-9.0.0.pom
 
@@ -319,93 +300,18 @@ The objective of this section is to assess the simple-pharmacy application that 
     
         cp ~/Student/modresorts-project/target/modresorts-2.0.0.war ~/Student/assets/
 
-
 #### 6.3.2 Deploy the WebSphere application and test it
 
-The application has not been installed to traditional WAS so far. You will now perform the following steps:
-- Start the WAS ND Deployment Manager and a Node Agent
-- Deploy the application via wsadmin to the WAS ND server1 instance
-- Configure WAS for the application
-- Start server1
-- Test the application if it works fine on traditional WAS.
+The application has not been installed to traditional WAS so far. Typically you would do this now in detail but this is out of scope here. Please look into the details about the required steps.
 
-1. In the terminal window, enter the following command to start the Deployment Manager
+Open a terminal window and enter the following commands to install the application:
 
-        ~/usr/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/startManager.sh
+    ~/usr/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/startManager.sh
+    cd ~/Student/modresorts-project/tWAS-Scripts
+    ~/usr/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/wsadmin.sh -f ./modresorts_install.py
+    ~/usr/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/wsadmin.sh -f ./setURLProvider.py
+    ~/usr/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/stopManager.sh
 
-    Wait until the Deployment Manager has been started
-
-    <kbd>![tWAS_dmgr-start](./images/media/tWAS_dmgr-start.png)</kbd>
-
-2. Enter the following command to start the Note Agent
-
-       ~/usr/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/startNode.sh
-
-    Wait until the Node agent has been started
-    
-    <kbd>![tWAS_node-start](./images/media/tWAS_node-start.png)</kbd>
-
-3. Deploy the application using wsadmin by entering the following commands:
-
-        cd ~/Student/modresorts-project/tWAS-Scripts
-
-        ~/usr/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/wsadmin.sh -f ./modresorts_install.py
-
-    <kbd>![tWAS_install_modresorts](./images/media/tWAS_install_modresorts.png)</kbd>
-
-
-4. Set the URLProvider which is used by the modresorts application via wsadmin by entering the following commands:
-
-        ~/usr/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/wsadmin.sh -f ./setURLProvider.py
-
-    <kbd>![tWAS_set_URLProvider](./images/media/tWAS_set_URLProvider.png)</kbd>
-
-5. Enter the following command to start the WAS server server1
-
-       ~/usr/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/startServer.sh server1
-
-    Wait until the server serer1 has been started
-    
-    <kbd>![tWAS_server1-start](./images/media/tWAS_server1_start.png)</kbd>
-
-6. Test the application
-
-    1. Open a browser window by clicking on **Activities** and then select the **Firefox** browser icon.
-
-        <kbd>![Toolbar_firefox](./images/media/Toolbar_firefox.png)</kbd>
-
-    2. Access the tWAS application using the URL http://localhost:9080/resorts
-
-    <kbd>![Toolbar_firefox](./images/media/modresorts_tWAS_1.png)</kbd>
-
-
-    3. Click on **Where to?** and switch to Paris or another city. 
-    (If the button does not work, make sure that the browser is in full-screen.)
-
-    <kbd>![Toolbar_firefox](./images/media/modresorts_tWAS_2.png)</kbd>
-
-    Verify that there are no errors shown. 
-    
-    <kbd>![Toolbar_firefox](./images/media/modresorts_tWAS_3.png)</kbd>
-    
-    4. Click on the **Logout** button.
-
-    <kbd>![Toolbar_firefox](./images/media/modresorts_tWAS_4.png)</kbd>
-
-    Verify that there are no errors shown. 
-    
-    <kbd>![Toolbar_firefox](./images/media/modresorts_tWAS_5.png)</kbd>
-
-    If everything worked fine, there should be no error displayed.
-    You will test the same application later on as is if it works on Liberty as well.
-
-7. Switch back to the terminal window and stop the WAS cell.
-
-        ~/usr/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/stopServer.sh server1
-        ~/usr/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/stopNode.sh
-        ~/usr/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/stopManager.sh
-
-As you have seen, the application works without any issue on WebSphere Traditional v9. The next step is to assess the application via AMA to find out which issues must be resolved to make the application work on Liberty with Java 8.
 
 ### 6.4 Create an AMA data collection for the WAS applications
 
@@ -1713,7 +1619,178 @@ In this lab, you learned how to assess a WebSphere application using IBM Applica
 
 **You have successfully completed the lab "Application Modernization Accelerator"**
 
-# Troubleshooting
+# Appendixy
 <details>
-<summary>Details around troubleshooting</summary>
+<summary>Additional Information</summary>
+
+## 5. Explore Application Modernization Accelerator
+
+### 5.2 Access the AMA User Interface
+
+To explore the AMA User Interface, you will create a workspace with sample data. A workspace is a designated area that will house the migration recommendations provided by AMA for existing applications and/or environments. You can name and organize these however you want, whether it’s by business application, location, or teams.
+Later on, you will create another workspace for the WebSphere landscape used in this lab environment.
+
+1. Access the AMA UI and create a workspace with sample applications.
+    1. Open a browser window by clicking on **Activities** and then select the **Firefox** browser icon.
+
+        <kbd>![Toolbar_firefox](./images/media/Toolbar_firefox.png)</kbd>
+
+    2. Access the AMA User Interface via the URL https://localhost:3000
+
+        If you get a warning, that there is a potential security risk, click on **Advanced** and then **Accept the Risk and Continue**. 
+
+        <kbd>![AMA_Potential_Security_Risk](./images/media/AMA_Potential_Security_Risk.png)</kbd>
+    
+        Finally, you should see the Application Modernization Overview Screen.
+
+        <kbd>![AMA_Initial_Screen](./images/media/AMA_Initial_Screen0.png)</kbd>
+    
+        Click the button to **Accept all** to accept all cookies.
+        An introduction wizard is displayed.
+
+        <kbd>![AMA_Initial_Screen-Intro.png](./images/media/AMA_Initial_Screen-Intro.png)</kbd>
+    
+        Click through the wizard and finally close it.
+        Your screen should now look like this:
+
+        <kbd>![AMA_Initial_Screen](./images/media/AMA_Initial_Screen.png)</kbd>
+    
+
+    3. Click on the button **Create workspace** and enter **Sample_Data**, select **include sample data**, then click on **Create**.
+
+        <kbd>![AMA_Workspace_Sample_Data](./images/media/AMA_Workspace_Sample_Data.png)</kbd>
+    
+    4. The workspace will be created.
+        <kbd>![AMA_Workspace_Sample_Data](./images/media/AMA_Workspace_Sample_Data_create.png)</kbd>
+    
+    5. Wait until the workspace has been created which can take a minute or so. Finally, you will see that the workspace has been created and contains 29 sample applications, 7 databases and 9 queues.
+        <kbd>![AMA_Workspace_Sample_Data_created](./images/media/AMA_Workspace_Sample_Data_created.png)</kbd>
+    
+2. Explore the workspace with the sample applications
+
+    1. Click on the workspace to open it.
+
+    2. AMA supports three destinations, **Liberty**, **MoRE** and **WebSphere Application Server** (Traditional)
+    
+        <kbd>![AMA_Select_Destination](./images/media/AMA_Select_Destination.png)</kbd>
+    
+    3. Select **Liberty** as destination and click on **Confirm**.
+    
+        <kbd>![AMA_Select_Liberty](./images/media/AMA_Select_Liberty.png)</kbd>
+    
+
+    4. The **Visualization** panel shows all applications and how they relate to each other regarding common databases or queues.
+
+        As this is a AMA trial version, a pop-up will be shown in the upper right. Close the pop-up.
+
+        <kbd>![AMA_Visualization_SampleData_PoC](./images/media/AMA_Visualization_SampleData_PoC.png)</kbd>
+
+        Now zoom in to see the application names.
+
+
+        <kbd>![AMA_Visualization_SampleData_Increased](./images/media/AMA_Visualization_SampleData_Increased.png)</kbd>
+    
+        You can filter by name to see only specific applications and dependencies. (For example, filter for the application ACME.)
+
+        <kbd>![AMA_Visualization_Filter_by_Name](./images/media/AMA_Visualization_Filter_by_Name.png)</kbd>
+    
+        You can also filter by library to see only specific applications and dependencies. (For example, filter for Spring libraries.)
+
+        <kbd>![AMA_Visualization_Filter_by_Library](./images/media/AMA_Visualization_Filter_by_Library.png)</kbd>
+    
+    As you can see in the screenshot above, the visualization provides insight which applications share the same database or queue which helps to shape your migration strategy.
+
+    5. Switch to the **Assessment** tab 
+
+        <kbd>![AMA_Assessment_Tab](./images/media/AMA_Assessment_Tab.png)</kbd>
+    
+        The assessment tab provides insight into the different applications.
+        <kbd>![AMA_Assessment_Overview](./images/media/AMA_Assessment_Overview.png)</kbd>
+    
+    6. Take a look at the upper part
+
+        <kbd>![AMA_Assessment_Total.png](./images/media/AMA_Assessment_Total.png)</kbd>
+
+        - Under **Applications**, you can change the destination including the Java SE and Java EE level.
+        - Under **Total Applications**, you can see the effort for the chosen target. AMA also analyzes all the application code and common code that is shared across applications and provides an estimated total cost for migrating the apps and common code in the workspace. 
+        
+        Total cost is the number of days of development cost to migrate that code to run on the selected migration target. In this example, WebSphere Liberty is the selected migration target.
+
+    7. Change the Java SE Level and the Java EE level to find out how the overall effort changes. As you can see the estimated efforts change.
+
+        <kbd>![AMA_Assessment_Total2.png](./images/media/AMA_Assessment_Total2.png)</kbd>
+
+        Finally, change the Java SE and Java EE level back to the minimum to see the efforts for the quickest path of modernization.
+
+    8. Take a look further down at the application list.
+
+        <kbd>![AMA_Assessment_Application_List.png](./images/media/AMA_Assessment_Application_List.png)</kbd>
+    
+        The “All Java applications” page also shows the application summary analysis results for all the apps from the AppSrv01 profile for each of the selected migration targets.
+
+        For each app / migration target combination, you can see these results:
+
+        - Java application
+        - Collection / Profile name
+        - Complexity
+        - Issues
+        - Required code changes
+        - Application cost (in days)
+        - Migration plan
+
+        The following details are included in the summary table (this is the per-application view):
+
+        - Application Name: The name of the EAR/WAR file found on the application server.
+
+        - Collection/Profile: Collection represents the hostname of the machine where the application resides. The profile represents the profile name in the application server where the application is installed.
+
+        - Complexity: Indicates how complex Transformation Advisor considers this application to be if you were to migrate it to the cloud.
+
+        - Issues: The number and severity of potential issues with the migration of the application.
+
+        - Required code changes: Indicates the type of code change needed.
+
+        - Application cost in days: Provides an estimate in days for the development effort to perform the migration for just this application. Cost estimates calculated by Transformation Advisor are high-level estimates only and may vary widely based on skills and other factors not considered by the tool.
+
+        - Migration plan: accelerator files generated by Transformation advisor to aide in building and deploying the selected application to the target runtime.
+
+    9. Feel free to expand the one or other app to see more details about an application.
+        <kbd>![AMA_Assessment_Application_Expanded.png](./images/media/AMA_Assessment_Application_Expanded.png)</kbd>
+    
+
+
+### 5.3 Explore the AMA APIs
+Application Modernization Accelerator (AMA) also provides Swagger interfaces to access some of the data via APIs.
+
+1. Open a browser and enter the following URL:
+    https://localhost:2220/openapi/ui/
+
+    If you get a warning, that there is a potential security risk, click on **Advanced** and then **Accept the Risk and Continue**. 
+
+    <kbd>![AMA_Potential_Security_Risk](./images/media/AMA_Potential_Security_Risk2.png)</kbd>
+
+    Finally, the Swagger UI opens:
+
+    <kbd>![AMA_Swagger_APIs.png](./images/media/AMA_Swagger_APIs.png)</kbd>
+
+2. Look at the different APIs which allow to create a new workspace, upload a data collection or bulk, upload the license key and much more.
+
+    Scroll down to the section **collection archives**.
+    <kbd>![AMA_Swagger_APIs2.png](./images/media/AMA_Swagger_APIs2.png)</kbd>
+
+    To create for example the demo workspace which you just created manually, you could use the **uploadSampleData** API via the following command:
+
+        curl -k -X 'POST' \
+        'https://localhost:2220/lands_advisor/advisor/v2/collectionArchives/uploadSampleData' \
+          -H 'accept: */*' \
+          -H 'locale: en' \
+          -H 'workspaceName: Sample_Data' \
+          -d ''
+
+3. Close the browser window with the Swagger UI.
+
+
+<br>
+Right now, you just explored the capabilities of AMA based on sample data. In the next section, you will analyze the modresorts application to identify the efforts to migrate it from traditional WAS to Liberty. You will use the AMA Discovery tool to gather the data collection from an existing WebSphere installation and perform some analysis.
+Then you will use the AMA Dev Tools to make the required code changes.
 
