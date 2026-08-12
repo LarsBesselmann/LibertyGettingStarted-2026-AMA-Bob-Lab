@@ -571,38 +571,15 @@ In this section of the lab, you will explore assessment details for the **modres
 
 
 #### 6.5.2 Assess the applications using the AMA PoC key
-Now lets apply an AMA Access Key so that you get access to the analysis detals and the migration plan. 
+Now lets apply an AMA Access Key so that you get access to the analysis detals and the migration plan. You can find details how to apply the PoC Access key via User Interface in the appendix.
 
-This section explains how to apply the access key via AMA User Interface. You could also run the following command to apply the key:
+1. Switch to a terminal window and run the following command the apply the access key. 
 
         sh ~/software/AMA/AMA_apply_PoC_Key.sh 
 
+2. Switch back to the AMA User Interface
 
-**Apply the AMA access key via User Interface**
-
-
-1. Click on **Trial days left** on the top of the page
-
-    <kbd>![AMA_Evaluation_ApplyLicenseKey1.png](./images/media/AMA_Evaluation_ApplyLicenseKey1.png)</kbd>
-
-2. In the pop-up, click on **Upload access key**
-
-    <kbd>![AMA_Evaluation_ApplyLicenseKey2.png](./images/media/AMA_Evaluation_ApplyLicenseKey2.png)</kbd>
-
-3. Click on **click to upload**
-
-    <kbd>![AMA_Evaluation_ApplyLicenseKey3.png](./images/media/AMA_Evaluation_ApplyLicenseKey3.png)</kbd>
-
-
-4. Navigate to **home > itzuser > software > AMA** and select the AMA key file, then cick on **Open**,
-
-    <kbd>![AMA_Evaluation_ApplyLicenseKey4.png](./images/media/AMA_Evaluation_ApplyLicenseKey4.png)</kbd>
-
-5. Click on **Upload**
-
-    <kbd>![AMA_Evaluation_ApplyLicenseKey5.png](./images/media/AMA_Evaluation_ApplyLicenseKey5.png)</kbd>
-
-6. The PoC wizzard will be shown. Feel free to walk through the wizard, then close it.
+3. The PoC wizzard will be shown. Feel free to walk through the wizard, then close it.
 
     <kbd>![AMA_Evaluation_ApplyLicenseKey6.png](./images/media/AMA_Evaluation_ApplyLicenseKey6.png)</kbd>
 
@@ -611,27 +588,27 @@ This section explains how to apply the access key via AMA User Interface. You co
     <kbd>![AMA_Evaluation_ApplyLicenseKey7.png](./images/media/AMA_Evaluation_ApplyLicenseKey7.png)</kbd>
 
 
-7. The next step is to add the **modresorts** application to the PoC.   Click on **Add to PoC**
+4. The next step is to add the **modresorts** application to the PoC.   Click on **Add to PoC**
 
     <kbd>![AMA_Evaluation_ApplyLicenseKey8.png](./images/media/AMA_Evaluation_ApplyLicenseKey8.png)</kbd>
 
-8. You will be asked to confirm that you want to **modresorts** application to the PoC. Click on **Confirm**.
+5. You will be asked to confirm that you want to **modresorts** application to the PoC. Click on **Confirm**.
 
     <kbd>![AMA_Evaluation_ApplyLicenseKey9.png](./images/media/AMA_Evaluation_ApplyLicenseKey9.png)</kbd>
 
-9. As you can see, the application has been added to the PoC and the migration plan has been unlocked.
+6. As you can see, the application has been added to the PoC and the migration plan has been unlocked.
 
     <kbd>![AMA_Evaluation_ApplyLicenseKey9a.png](./images/media/AMA_Evaluation_ApplyLicenseKey9a.png)</kbd>
 
     Before we will go to the migration plan, we will take a look at some other unlocked capabilities.
 
-10. Take a look at the left and you can see that the **Analysis report** has been unlocked.
+7. Take a look at the left and you can see that the **Analysis report** has been unlocked.
 
     <kbd>![AMA_Evaluation_ApplyLicenseKey9b.png](./images/media/AMA_Evaluation_ApplyLicenseKey9b.png)</kbd>
 
     Feel free to look into the report.
 
-11. Scroll down to the section **Issues**. 
+8. Scroll down to the section **Issues**. 
 
     Under **Unique Code Issues**, expand the list of **Technology issues**.
 
@@ -1794,3 +1771,76 @@ Application Modernization Accelerator (AMA) also provides Swagger interfaces to 
 Right now, you just explored the capabilities of AMA based on sample data. In the next section, you will analyze the modresorts application to identify the efforts to migrate it from traditional WAS to Liberty. You will use the AMA Discovery tool to gather the data collection from an existing WebSphere installation and perform some analysis.
 Then you will use the AMA Dev Tools to make the required code changes.
 
+
+#### 6.5.2 Assess the applications using the AMA PoC key
+Now lets apply an AMA Access Key so that you get access to the analysis detals and the migration plan. 
+
+This section explains how to apply the access key via AMA User Interface. You could also run the following command to apply the key:
+
+        sh ~/software/AMA/AMA_apply_PoC_Key.sh 
+
+
+**Apply the AMA access key via User Interface**
+
+
+1. Click on **Trial days left** on the top of the page
+
+    <kbd>![AMA_Evaluation_ApplyLicenseKey1.png](./images/media/AMA_Evaluation_ApplyLicenseKey1.png)</kbd>
+
+2. In the pop-up, click on **Upload access key**
+
+    <kbd>![AMA_Evaluation_ApplyLicenseKey2.png](./images/media/AMA_Evaluation_ApplyLicenseKey2.png)</kbd>
+
+3. Click on **click to upload**
+
+    <kbd>![AMA_Evaluation_ApplyLicenseKey3.png](./images/media/AMA_Evaluation_ApplyLicenseKey3.png)</kbd>
+
+
+4. Navigate to **home > itzuser > software > AMA** and select the AMA key file, then cick on **Open**,
+
+    <kbd>![AMA_Evaluation_ApplyLicenseKey4.png](./images/media/AMA_Evaluation_ApplyLicenseKey4.png)</kbd>
+
+5. Click on **Upload**
+
+    <kbd>![AMA_Evaluation_ApplyLicenseKey5.png](./images/media/AMA_Evaluation_ApplyLicenseKey5.png)</kbd>
+
+6. The PoC wizzard will be shown. Feel free to walk through the wizard, then close it.
+
+    <kbd>![AMA_Evaluation_ApplyLicenseKey6.png](./images/media/AMA_Evaluation_ApplyLicenseKey6.png)</kbd>
+
+    As you can see, the display on the top right now switched to **Proof of Concept** and shows that there are 3 applications remaining. This means that you got access to analyze 3 applications.
+
+    <kbd>![AMA_Evaluation_ApplyLicenseKey7.png](./images/media/AMA_Evaluation_ApplyLicenseKey7.png)</kbd>
+
+
+7. The next step is to add the **modresorts** application to the PoC.   Click on **Add to PoC**
+
+    <kbd>![AMA_Evaluation_ApplyLicenseKey8.png](./images/media/AMA_Evaluation_ApplyLicenseKey8.png)</kbd>
+
+8. You will be asked to confirm that you want to **modresorts** application to the PoC. Click on **Confirm**.
+
+    <kbd>![AMA_Evaluation_ApplyLicenseKey9.png](./images/media/AMA_Evaluation_ApplyLicenseKey9.png)</kbd>
+
+9. As you can see, the application has been added to the PoC and the migration plan has been unlocked.
+
+    <kbd>![AMA_Evaluation_ApplyLicenseKey9a.png](./images/media/AMA_Evaluation_ApplyLicenseKey9a.png)</kbd>
+
+    Before we will go to the migration plan, we will take a look at some other unlocked capabilities.
+
+10. Take a look at the left and you can see that the **Analysis report** has been unlocked.
+
+    <kbd>![AMA_Evaluation_ApplyLicenseKey9b.png](./images/media/AMA_Evaluation_ApplyLicenseKey9b.png)</kbd>
+
+    Feel free to look into the report.
+
+11. Scroll down to the section **Issues**. 
+
+    Under **Unique Code Issues**, expand the list of **Technology issues**.
+
+    <kbd>![AMA_Evaluation_Assessment-modresorts4.png](./images/media/AMA_Evaluation_Assessment-modresorts4.png)</kbd>
+
+    Expand any of the 5 issues and you can get more details about the issue, recommended changes and which code is impacted. 
+
+    <kbd>![AMA_Evaluation_Assessment-modresorts4b.png](./images/media/AMA_Evaluation_Assessment-modresorts4b.png)</kbd>
+    
+    **This capability is not available with the trial access key.**
