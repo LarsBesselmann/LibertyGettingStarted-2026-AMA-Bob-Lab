@@ -1461,6 +1461,62 @@ In the section we will outline how AMA Dev Tools can help with the modernization
 
             Wait until the Liberty instance has stopped.
 
+4. Adjust the auto-approval permissions
+
+    Permissions are used to define what Bob is allowed to do without asking. Initially you set the permissions to **Read** only. 
+
+    1. Review the permissions for the task
+        
+        Click on **Permissions** to see what has been enabled:
+
+        <kbd>![Bob_Permissions_Task](./images/media/Bob_Permissions_Task.png)</kbd>
+
+        In the last part of the lab, you click several times on **Approve for task**. This is reflected in the task permissions.
+    
+    2. Adjust the permissions overall
+
+        Task permissions are only valid for the current task. But typically there are some permissions that you want to approve for any project and task. This is defined in the **Bob Settings**.
+
+        Click in the Bob panel on **Settings**.
+
+        <kbd>![Bob_Settings1](./images/media/Bob_Settings1.png)</kbd>
+
+        Click on **Chat** to see the details about auto approvals:
+
+        <kbd>![Bob_Auto_Approval1.png](./images/media/Bob_Auto_Approval1.png)</kbd>
+
+        Expand the section **Execute** to see all allowed and denied commands:
+
+        <kbd>![Bob_Auto_Approval_Execute.png](./images/media/Bob_Auto_Approval_Execute.png)</kbd>
+
+        As you can see, the auto-approval for Execute is not enabled so far. 
+        Feel free to enable it.
+        
+        In this section, you could also add your own commands like **curl**, **mvn clean** and so on that you want to auto-approve.
+
+        Close the section for Execute.
+
+        Scroll down and you can see that the read and write files is only allowed within the workspace even if auto-approval for **Read** or **Edit** is enabled. 
+
+        <kbd>![Bob_Workspace_Sandbox.png](./images/media/Bob_Workspace_Sandbox.png)</kbd>
+
+        This makes sure that Bob cannot access files outside the workspace unintended.
+
+        You can also define task limits to make sure Bob does not consume all coins for example.
+
+        <kbd>![Bob_Task_Limit.png](./images/media/Bob_Task_Limit.png)</kbd>
+
+        For the next part of the lab, adjust the Chat settings to this: 
+
+        <kbd>![Bob_Settings2.png](./images/media/Bob_Settings2.png)</kbd>
+
+    
+        Finally set the **Bob Settings** panel
+
+        <kbd>![Bob_Settings_close.png](./images/media/Bob_Settings_close.png)</kbd>
+    
+
+
 
 ### 7.3 Perform a Java upgrade using IBM Bob
 
