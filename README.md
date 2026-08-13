@@ -200,7 +200,7 @@ This section will give a brief overview how to use the AMA User interface. You c
 
         <kbd>![AMA_Assessment_Total2.png](./images/media/AMA_Assessment_Total2.png)</kbd>
 
-        Finally, change the Java SE and Java EE level back to the minimum to see the efforts for the quickest path of modernization.
+        Finally, change the Java SE and Java EE level back to the minimum to see the efforts for the quickest path of modernization. (You must changhe the Java EE level back to a lower level before you can change the Java Level back to 8. This is due to the fact that Jakarta EE 10 is not supported with Java 8.)
 
     7. Take a look further down at the application list.
 
