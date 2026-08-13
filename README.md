@@ -15,8 +15,8 @@ Need support? Contact **Lars Besselmann, Lars.Besselmann@de.ibm.com**
 
 ## About the lab
 
-This lab provides ennd-to-end experience how to modernize an old Java Enterprise Application to Liberty. 
-First you will use Application Modernization Accelerator (AMA) to assess the application, then you will use the IBM Bob Premium Package for Java Modernization to perform the required code changes.
+This lab provides end-to-end experience how to modernize an old Java Enterprise Application to Liberty. 
+First, you will use Application Modernization Accelerator (AMA) to assess the application, then you will use the IBM Bob Premium Package for Java Modernization to perform the required code changes.
 
 
 ## 1. Introduction
@@ -29,7 +29,7 @@ Your company wants to move these applications to the modern WebSphere Liberty se
 
 You decide to use the IBM Application Modernization Accelerator to do a quick evaluation of these applications without their source code to identify a good candidate application to move to Liberty and container-based cloud.
 
-After determining a candidate application for modernization to WebSphere Liberty, you use the migration plan to feed it into IBM Bob to let IBM Bob perform the required code changes. Some of them will be based on recipes, others will be done in an agentic way. Finally you will deploy and run the application on WebSphere Liberty on your local developer machine to validate the solution.
+After determining a candidate application for modernization to WebSphere Liberty, you use the migration plan to feed it into IBM Bob to let IBM Bob perform the required code changes. Some of them will be based on recipes, others will be done in an agentic way. Finally, you will deploy and run the application on WebSphere Liberty on your local developer machine to validate the solution.
 
 ## 2. Objective
 
@@ -61,7 +61,7 @@ As IBMer, you can request the related TechZone environment here:
 - Collection: https://techzone.ibm.com/collection/liberty-getting-started-labs-demos/journey-modernization-tools
 - Environment: **Application Modernization VM - for Liberty, AMA v5, IBM Bob**.
 
-    (Please be aware that there is also an environemtn for AMA v4)
+    (Please be aware that there is also an environment for AMA v4)
 
 The following software has been installed:
 - Java 17 or beyond 
@@ -102,7 +102,7 @@ Let's check if AMA is already started. This can be validated by reviewing if the
 
     <kbd>![AMA_Launcher](./images/media/AMA_Launcher.png)</kbd>
 
-    If AMA is avalable, enter **q** to quit the script.
+    If AMA is available, enter **q** to quit the script.
 
     If AMA is **not running** (see screenshot below), enter **5** to start AMA. 
     <kbd>![AMA_Launcher_stopped](./images/media/AMA_Launcher_stopped.png)</kbd>
@@ -166,7 +166,7 @@ This section will give a brief overview how to use the AMA User interface. You c
 
     3. The **Visualization** panel shows all applications and how they relate to each other regarding common databases or queues.
 
-        As this is a AMA trial version, a pop-up will be shown in the upper right. Close the pop-up.
+        As this is an AMA trial version, a pop-up will be shown in the upper right. Close the pop-up.
 
         <kbd>![AMA_Visualization_SampleData_PoC](./images/media/AMA_Visualization_SampleData_PoC.png)</kbd>
 
@@ -302,7 +302,7 @@ The objective of this section is to assess the simple-pharmacy application that 
 
 #### 6.3.2 Deploy the WebSphere application and test it
 
-The application has not been installed to traditional WAS so far. Typically you would do this now in detail but this is out of scope here. Please look into the details about the required steps.
+The application has not been installed to traditional WAS so far. Typically, you would do this now in detail, but this is out of scope here. Please look into the details about the required steps.
 
 Open a terminal window and enter the following commands to install the application:
 
@@ -451,8 +451,8 @@ To evaluate on-premises Java applications, you need to run the AMA Discovery Too
 
         Comments: 
         - In the lab, the process only takes a couple of seconds. In a real scenario, the process typically takes some time to complete, depending on how many applications are deployed on the WebSphere Application server and the complexity of the applications. As this process consumes some CPU and memory, it is not recommended to run the discovery tool in production.
-        - You might have recognized that the WebSphere applications were discovered even though the WebSphere instances were stopped. This is due to the fact that the discovery tools looks into the WebSphere files instead of connecting to a running instance.
-        - In the lab environment, the discovery tool can connect to the AMA instance via port 2220. Therefore the collected data has been automatically uploaded. If this is not the case, you must copy over the data collection zip to another system and manually upload the data to AMA from that system before you can view the results. 
+        - You might have recognized that the WebSphere applications were discovered even though the WebSphere instances were stopped. This is due to the fact that the discovery tool looks into the WebSphere files instead of connecting to a running instance.
+        - In the lab environment, the discovery tool can connect to the AMA instance via port 2220. Therefore, the collected data has been automatically uploaded. If this is not the case, you must copy over the data collection zip to another system and manually upload the data to AMA from that system before you can view the results. 
         - You can also specify in the ama-discovery command not to upload the data collection automatically. 
 
 
@@ -579,7 +579,7 @@ Now lets apply an AMA Access Key so that you get access to the analysis detals a
 
 2. Switch back to the AMA User Interface
 
-3. The PoC wizzard will be shown. Feel free to walk through the wizard, then close it.
+3. The PoC wizard will be shown. Feel free to walk through the wizard, then close it.
 
     <kbd>![AMA_Evaluation_ApplyLicenseKey6.png](./images/media/AMA_Evaluation_ApplyLicenseKey6.png)</kbd>
 
@@ -596,11 +596,11 @@ Now lets apply an AMA Access Key so that you get access to the analysis detals a
 
     <kbd>![AMA_Evaluation_ApplyLicenseKey9.png](./images/media/AMA_Evaluation_ApplyLicenseKey9.png)</kbd>
 
-6. As you can see, the application has been added to the PoC and the migration plan has been unlocked.
+6. As you can see, the application has been added to the PoC, and the migration plan has been unlocked.
 
     <kbd>![AMA_Evaluation_ApplyLicenseKey9a.png](./images/media/AMA_Evaluation_ApplyLicenseKey9a.png)</kbd>
 
-    Before we will go to the migration plan, we will take a look at some other unlocked capabilities.
+    Before you go to the migration plan, you will take a look at some other unlocked capabilities.
 
 7. Take a look at the left and you can see that the **Analysis report** has been unlocked.
 
@@ -815,7 +815,7 @@ Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools wi
         Then click on **Trust** to make this workspace trusted.
         <kbd>![Bob_RestrictedMode3.png](./images/media/Bob_RestrictedMode3.png)</kbd>
 
-        Finally close the pop-up by clicking on **X**.
+        Finally, close the pop-up by clicking on **X**.
         <kbd>![Bob_RestrictedMode4.png](./images/media/Bob_RestrictedMode4.png)</kbd>
 
         If you used Bob before, you might see a **Migration** panel like this:
@@ -847,7 +847,7 @@ Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools wi
         You will use the Liberty Tools Extension during the lab.
 
 4. Log into IBM Bob
-    1. On the right side of the IDE, click on the butto **Log in to Bob** 
+    1. On the right side of the IDE, click on the button **Log in to Bob** 
 
         <kbd>![Bob_Login.png](./images/media/Bob_Login.png)</kbd>
 
@@ -909,7 +909,7 @@ Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools wi
 
         <kbd>![Bob_Logout.png](./images/media/Bob_Logout.png)</kbd>
   
-    3. Finally you should have an account that has access to the premium package.
+    3. Finally, you should have an account that has access to the premium package.
 
         <kbd>![Bob_premium_user.png](./images/media/Bob_premium_user.png)</kbd>
     
@@ -962,7 +962,7 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
     
         <kbd>![Bob_Java_Modernization_Workflow_GettingStarted.png](./images/media/Bob_Java_Modernization_Workflow_GettingStarted.png)</kbd>
 
-        Finally click on **Continue**.
+        Finally, click on **Continue**.
 
 2. Bob prepares the modernization
 
@@ -1087,7 +1087,7 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
 
 5. Continue with the modernization wizard.
 
-    1. Go back tp the modernization wizard and click on **Approve once** to apply the automated fixes.
+    1. Go back to the modernization wizard and click on **Approve once** to apply the automated fixes.
 
         <kbd>![Bob_Java_Modernization_Workflow_after_testing.png](./images/media/Bob_Java_Modernization_Workflow_after_testing.png)</kbd>
 
@@ -1118,7 +1118,7 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
 
     1. Fix the issues around **WebSphere Runtime APIs and SPIs**
 
-        1. Bob wants to starts a new subtask to fix the issues around the WebSphere Runtime APIs and SPIs.
+        1. Bob wants to start a new subtask to fix the issues around the WebSphere Runtime APIs and SPIs.
 
             <kbd>![Bob_Fix_WebSphere_Runtimes.png](./images/media/Bob_Fix_WebSphere_Runtimes.png)</kbd>
 
@@ -1128,7 +1128,7 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
 
             <kbd>![Bob_Fix_WebSphere_Runtimes2.png](./images/media/Bob_Fix_WebSphere_Runtimes2.png)</kbd>
 
-            Review the Todo list (you could also edit it to add or remove steps). Finally click on **Approve once** to continue. 
+            Review the Todo list (you could also edit it to add or remove steps). Finally, click on **Approve once** to continue. 
 
 
         3. Bob detects that the critical code no longer exists in the WeatherServlet. It wants to review the changes in git to understand why.
@@ -1137,7 +1137,7 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
 
             Click on **Approve once** to continue. 
 
-        4. Bob verified that the code was already changed (by the recipes), so no further action is required. Therefore Bob wants to update the Todo list.
+        4. Bob verified that the code was already changed (by the recipes), so no further action is required. Therefore, Bob wants to update the Todo list.
 
             <kbd>![Bob_Fix_WebSphere_Runtimes4.png](./images/media/Bob_Fix_WebSphere_Runtimes4.png)</kbd>
 
@@ -1169,7 +1169,7 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
 
     2. Fix the issues around **WebSphere Servlet API**
 
-        1. Bob wants to starts a new subtask to fix the issues around the WebSphere Servlet API. 
+        1. Bob wants to start a new subtask to fix the issues around the WebSphere Servlet API. 
 
             <kbd>![Bob_Fix_WebSphere_ServletAPI1.png](./images/media/Bob_Fix_WebSphere_ServletAPI1.png)</kbd>
 
@@ -1204,7 +1204,7 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
 
             <kbd>![Bob_Fix_WebSphere_ServletAPI5.png](./images/media/Bob_Fix_WebSphere_ServletAPI5.png)</kbd>
 
-            Your list of alternatives might look different, Bob might also decide to display the alternatives as list instead of a table.
+            Your list of alternatives might look different; Bob might also decide to display the alternatives as list instead of a table.
 
             Select **Apache Commons** by clicking on the related field.
 
@@ -1293,7 +1293,7 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
 
             Click on **Approve for task** to continue. 
 
-        11. Bob started Liberty and the application, analyzed the logs and detected some configuration issues. Therefore Bob wants to stop the Liberty instance to clean up the Liberty configuration.
+        11. Bob started Liberty and the application, analyzed the logs and detected some configuration issues. Therefore, Bob wants to stop the Liberty instance to clean up the Liberty configuration.
 
             <kbd>![Bob_Start_Deployment9.png](./images/media/Bob_Start_Deployment9.png)</kbd>
 
@@ -1317,7 +1317,7 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
 
             Click on **Approve for task** to continue. 
 
-        15. Bob tested additional endpoints successfully and got some errors. Therefore Bob wants to test additional endpoints via curl:
+        15. Bob tested additional endpoints successfully and got some errors. Therefore, Bob wants to test additional endpoints via curl:
         
             <kbd>![Bob_Start_Deployment13.png](./images/media/Bob_Start_Deployment13.png)</kbd>
 
@@ -1377,7 +1377,7 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
     
     2. Adjust the permissions overall
 
-        Task permissions are only valid for the current task. But typically there are some permissions that you want to approve for any project and task. These are defined in the **Bob Settings**.
+        Task permissions are only valid for the current task. But typically, there are some permissions that you want to approve for any project and task. These are defined in the **Bob Settings**.
 
         Click in the Bob panel on **Settings**.
 
@@ -1412,7 +1412,7 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
         <kbd>![Bob_Settings2.png](./images/media/Bob_Settings2.png)</kbd>
 
     
-        Finally set the **Bob Settings** panel
+        Finally, set the **Bob Settings** panel
 
         <kbd>![Bob_Settings_Close.png](./images/media/Bob_Settings_Close.png)</kbd>
     
@@ -1425,7 +1425,7 @@ Now let's take a look at the Java Upgrade workflow.
 
 1. Start the Java Upgrade Workflow
 
-    1. Switch to the Bob panel, click on the **Start Worflow** icon and click on **Java Modernization** **Start** button
+    1. Switch to the Bob panel, click on the **Start Workflow** icon and click on **Java Modernization** **Start** button
     
         <kbd>![Bob_Java_Modernization_Workflow_start2.png](./images/media/Bob_Java_Modernization_Workflow_start2.png)</kbd>
 
@@ -1442,7 +1442,7 @@ Now let's take a look at the Java Upgrade workflow.
     
     Click on **Continue**.
 
-    4. Bob wants to check if sdkman is available which is requierd for the workflow.
+    4. Bob wants to check if sdkman is available which is required for the workflow.
     
         <kbd>![Bob_Java_Modernization_Workflow_sdkman.png](./images/media/Bob_Java_Modernization_Workflow_sdkman.png)</kbd>
     
@@ -1509,11 +1509,11 @@ Now let's take a look at the Java Upgrade workflow.
 
 3. Review Java Upgrade Summary
 
-    1. Bob completed the Java upgrade and created a summary with the costs of the migration and a migration miagram:
+    1. Bob completed the Java upgrade and created a summary with the costs of the migration and a migration diagram:
 
         <kbd>![Bob_Java_Modernization_Workflow_Fix_Java_Issues8.png](./images/media/Bob_Java_Modernization_Workflow_Fix_Java_Issues8.png)</kbd>
      
-        Click on **Migraton Diagram** to expand it.
+        Click on **Migration Diagram** to expand it.
 
     2. Bob completed the Java upgrade and created a summary including Migration Diagram:
 
@@ -1565,13 +1565,13 @@ Now let's take a look at the Java Upgrade workflow.
 
     Approve required tasks.
 
-    Finally Bob compiles the fixes application
+    Finally, Bob compiles the fixes application
 
     <kbd>![Bob_Java21_MBean_Issue_BobFix.png](./images/media/Bob_Java21_MBean_Issue_BobFix.png)</kbd>
 
     Start Liberty via Liberty Dashboard or via terminal (mvn liberty:run).
 
-    Finally test the application again in the browser. Click on **Where to?** and switch to Paris should no longer return an error.
+    Finally, test the application again in the browser. Click on **Where to?** and switch to Paris should no longer return an error.
 
     <kbd>![Bob_ModerResorts_Paris_Success.png](./images/media/Bob_ModerResorts_Paris_Success.png)</kbd>
 
@@ -1791,7 +1791,7 @@ Then you will use the AMA Dev Tools to make the required code changes.
 
 
 #### 6.5.2 Assess the applications using the AMA PoC key
-Now lets apply an AMA Access Key so that you get access to the analysis detals and the migration plan. 
+Now let's apply an AMA Access Key so that you get access to the analysis details and the migration plan. 
 
 This section explains how to apply the access key via AMA User Interface. You could also run the following command to apply the key:
 
@@ -1822,7 +1822,7 @@ This section explains how to apply the access key via AMA User Interface. You co
 
     <kbd>![AMA_Evaluation_ApplyLicenseKey5.png](./images/media/AMA_Evaluation_ApplyLicenseKey5.png)</kbd>
 
-6. The PoC wizzard will be shown. Feel free to walk through the wizard, then close it.
+6. The PoC wizard will be shown. Feel free to walk through the wizard, then close it.
 
     <kbd>![AMA_Evaluation_ApplyLicenseKey6.png](./images/media/AMA_Evaluation_ApplyLicenseKey6.png)</kbd>
 
