@@ -818,6 +818,22 @@ Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools wi
         <kbd>![Bob_Popup2.png](./images/media/Bob_Popup2.png)</kbd>
 
 
+    6. Look at the bottom left of your Bobide window to find out if Bobide runs in Restricted Mode.
+
+
+        <kbd>![Bob_RestrictedMode2.png](./images/media/Bob_RestrictedMode2.png)</kbd>
+
+        If so, click on the field *Restricted Mode* to open the panel.
+
+        <kbd>![Bob_RestrictedMode1.png](./images/media/Bob_RestrictedMode1.png)</kbd>
+
+        Then click on **Trust** to make this workspace trusted.
+        <kbd>![Bob_RestrictedMode3.png](./images/media/Bob_RestrictedMode3.png)</kbd>
+
+        Finally close the pop-up by clicking on **X**.
+        <kbd>![Bob_RestrictedMode4.png](./images/media/Bob_RestrictedMode4.png)</kbd>
+
+
 3. Take a look at the installed extensions
 
     1. Open the Extensions panel
