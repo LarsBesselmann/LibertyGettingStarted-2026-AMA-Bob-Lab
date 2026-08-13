@@ -946,7 +946,7 @@ Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools wi
 ### 7.2 Modernize modresorts to WebSphere Liberty using IBM Bob
 In the section you will use the **Liberty Modernization Workflow** to modernize the application to Liberty.
 
-1. Start the Java Modernization wizard
+1. Start the Java Modernization workflow
 
     1. In the **Bob** panel, click on **Permissions** to see which activities IBM Bob is allowed to do without approval. Set the settings to **Read**.
     This will allow you to better understand the workflow and decisions.
