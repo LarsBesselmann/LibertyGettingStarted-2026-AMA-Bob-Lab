@@ -844,7 +844,7 @@ Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools wi
         Look at the details, then close the Liberty Tools Extension panel.
         You might have a newer version displayed.
     
-    You will use the Extension during the lab.
+        You will use the Liberty Tools Extension during the lab.
 
 4. Log into IBM Bob
     1. On the right side of the IDE, click on the butto **Log in to Bob** 
@@ -889,13 +889,13 @@ Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools wi
 
 5. Verify that you use an account that has access to the IBM Premium Package for Java Modernization
 
-    1. On the upper right part of the Bob IDE, click on the settings icon.    Then take a look at the account:
+    1. On the upper right part of the Bob IDE, click on the **Settings** icon.    Then take a look at the account:
     
          <kbd>![Bob_premium_user.png](./images/media/Bob_premium_user.png)</kbd>
       
         If you have a user with access to the premium package, it is listed under add-ons (see above). 
         
-    2. Perform these stape if the premium package is not listed.
+    2. Perform these steps if the premium package is not listed.
 
         <kbd>![Bob_standard_user.png](./images/media/Bob_standard_user.png)</kbd>
   
@@ -915,7 +915,7 @@ Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools wi
     
 6. Install the premium package extension:
     
-    1. In the list of **Add-ons**, click on the **Install** button.
+    1. In the list of **Add-ons**, click on the **Install** button next to **IBM Premium Package for Java Modernization**.
     
         <kbd>![Bob_premium_user_install.png](./images/media/Bob_premium_user_install.png)</kbd>
     
