@@ -929,21 +929,22 @@ Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools wi
 
         As you can see, you could start the modernization workflow from here.
 
-    4. If the Bob Panel on the right is not open, click on the **Bob** icon.
+
+    4. If the **IBM Bob** Panel on the right is not open, click on the **Bob** icon to open it.
 
         <kbd>![Bob_Open_Bob_Panel.png](./images/media/Bob_Open_Bob_Panel.png)</kbd>
 
     
-    5. Click on the workflow icon and take a look at the Bob workflows that are offered. 
+    5. In the **IBM Bob** panel, click on the workflow icon and take a look at the Bob workflows that are offered. 
     
-        You should see different workflows including the ones for Java Modernization (which are expaneded in the screenshot below):
+        You should see different workflows including the ones for Java Modernization (which are expanded in the screenshot below):
 
         <kbd>![Bob_premium_user_Workflows.png](./images/media/Bob_premium_user_Workflows.png)</kbd>
 
 
 
 ### 7.2 Modernize modresorts to WebSphere Liberty using IBM Bob
-In the section we will outline how AMA Dev Tools can help with the modernization to Liberty.
+In the section you will use the **Liberty Modernization Workflow** to modernize the application to Liberty.
 
 1. Start the Java Modernization wizard
 
