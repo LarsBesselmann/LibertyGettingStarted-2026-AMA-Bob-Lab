@@ -200,7 +200,7 @@ This section will give a brief overview how to use the AMA User interface. You c
 
         <kbd>![AMA_Assessment_Total2.png](./images/media/AMA_Assessment_Total2.png)</kbd>
 
-        Finally, change the Java SE and Java EE level back to the minimum to see the efforts for the quickest path of modernization.
+        Finally, change the Java SE and Java EE level back to the minimum to see the efforts for the quickest path of modernization. (You must change the Java EE level back to a lower level before you can change the Java Level back to 8. This is due to the fact that Jakarta EE 10 is not supported with Java 8.)
 
     7. Take a look further down at the application list.
 
@@ -783,45 +783,32 @@ Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools wi
 
         The IBM Bob IDE will be opened.
 
-    2. You might see the one or other panel:
-    
-        1. If you get a pop-up that Authentication is required, enter **IBMDem0s!** in both fields and select **Continue**.
-    
-            <kbd>![Bob_Keyring.png](./images/media/Bob_Keyring.png)</kbd>
+        If you get a Welcome panel offering to import settings, click on **Skip for now**,
 
-        2. If you get a pop-up that Authentication is required, click on **Yes, I trust the authors** to continue.
+        <kbd>![Bob_Import_Panel.png](./images/media/Bob_Import_Panel.png)</kbd>
+        
 
-            <kbd>![Bob_TrustAuthor.png](./images/media/Bob_TrustAuthor.png)</kbd>
+    2. If you get a pop-up that a Bob update is available, click on settings and select **Keep current version**.
 
-        3. If you get a pop-up that a Bob update is available, click on settings and select **Keep current version**.
+        <kbd>![Bob_UpdateAvailable.png](./images/media/Bob_UpdateAvailable.png)</kbd>
 
-            <kbd>![Bob_UpdateAvailable.png](./images/media/Bob_UpdateAvailable.png)</kbd>
+        <kbd>![Bob_Keep_current_version.png](./images/media/Bob_Keep_current_version.png)</kbd>
+       
 
-            <kbd>![Bob_Keep_current_version.png](./images/media/Bob_Keep_current_version.png)</kbd>
+    3. If you get a **Bob Getting Started** panel, close it:
 
+        <kbd>![Bob_Getting_Started.png](./images/media/Bob_Getting_Started.png)</kbd>
 
-    3. On the Welcome Panel you can open the Walkthrough to get more insight into IBM Bob. Feel free to open it.
-
-        <kbd>![Bob_Welcome.png](./images/media/Bob_Welcome.png)</kbd>
-
-    Finally, close the **Welcome** panel. 
-
-    4. Under settings, you can change the theme. The lab document uses as color **Bob Theme**. Feel free to adjust the theme to your choice. 
-
-        <kbd>![Bob_Change_Theme.png](./images/media/Bob_Change_Theme.png)</kbd>
-
-    
-    5. If you see during the lab a pop-up like below or any other pop-up asking to install something, close the pop-up without installation by clicking the **X**. 
+    4. If you see during the lab a pop-up like below or any other pop-up asking to install something, close the pop-up without installation by clicking the **X**. 
 
         <kbd>![Bob_Popup2.png](./images/media/Bob_Popup2.png)</kbd>
 
 
-    6. Look at the bottom left of your Bobide window to find out if Bobide runs in Restricted Mode.
-
+    5. Look at the bottom left of your Bobide window to find out if Bobide runs in Restricted Mode.
 
         <kbd>![Bob_RestrictedMode2.png](./images/media/Bob_RestrictedMode2.png)</kbd>
 
-        If so, click on the field *Restricted Mode* to open the panel.
+        If so, click on the field **Restricted Mode** to open the panel.
 
         <kbd>![Bob_RestrictedMode1.png](./images/media/Bob_RestrictedMode1.png)</kbd>
 
@@ -831,6 +818,18 @@ Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools wi
         Finally close the pop-up by clicking on **X**.
         <kbd>![Bob_RestrictedMode4.png](./images/media/Bob_RestrictedMode4.png)</kbd>
 
+        If you used Bob before, you might see a **Migration** panel like this:
+
+        <kbd>![Bob_Skip_Migration.png](./images/media/Bob_Skip_Migration.png)</kbd>
+
+        Click on **Skip migration** to continue.
+
+        
+    4. The lab document uses the color theme **Bob Theme**. If you want to change your theme, you can do so under settings. 
+
+        <kbd>![Bob_Change_Theme.png](./images/media/Bob_Change_Theme.png)</kbd>
+
+    
 
 3. Take a look at the installed extensions
 
@@ -845,7 +844,7 @@ Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools wi
         Look at the details, then close the Liberty Tools Extension panel.
         You might have a newer version displayed.
     
-    You will use the Extension during the lab.
+        You will use the Liberty Tools Extension during the lab.
 
 4. Log into IBM Bob
     1. On the right side of the IDE, click on the butto **Log in to Bob** 
@@ -890,13 +889,13 @@ Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools wi
 
 5. Verify that you use an account that has access to the IBM Premium Package for Java Modernization
 
-    1. On the upper right part of the Bob IDE, click on the settings icon.    Then take a look at the account:
+    1. On the upper right part of the Bob IDE, click on the **Settings** icon.    Then take a look at the account:
     
          <kbd>![Bob_premium_user.png](./images/media/Bob_premium_user.png)</kbd>
       
         If you have a user with access to the premium package, it is listed under add-ons (see above). 
         
-    2. Perform these stape if the premium package is not listed.
+    2. Perform these steps if the premium package is not listed.
 
         <kbd>![Bob_standard_user.png](./images/media/Bob_standard_user.png)</kbd>
   
@@ -916,7 +915,7 @@ Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools wi
     
 6. Install the premium package extension:
     
-    1. In the list of **Add-ons**, click on the **Install** button.
+    1. In the list of **Add-ons**, click on the **Install** button next to **IBM Premium Package for Java Modernization**.
     
         <kbd>![Bob_premium_user_install.png](./images/media/Bob_premium_user_install.png)</kbd>
     
@@ -930,23 +929,24 @@ Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools wi
 
         As you can see, you could start the modernization workflow from here.
 
-    4. If the Bob Panel on the right is not open, click on the **Bob** icon.
+
+    4. If the **IBM Bob** Panel on the right is not open, click on the **Bob** icon to open it.
 
         <kbd>![Bob_Open_Bob_Panel.png](./images/media/Bob_Open_Bob_Panel.png)</kbd>
 
     
-    5. Click on the workflow icon and take a look at the Bob workflows that are offered. 
+    5. In the **IBM Bob** panel, click on the workflow icon and take a look at the Bob workflows that are offered. 
     
-        You should see different workflows including the ones for Java Modernization (which are expaneded in the screenshot below):
+        You should see different workflows including the ones for Java Modernization (which are expanded in the screenshot below):
 
         <kbd>![Bob_premium_user_Workflows.png](./images/media/Bob_premium_user_Workflows.png)</kbd>
 
 
 
 ### 7.2 Modernize modresorts to WebSphere Liberty using IBM Bob
-In the section we will outline how AMA Dev Tools can help with the modernization to Liberty.
+In the section you will use the **Liberty Modernization Workflow** to modernize the application to Liberty.
 
-1. Start the Java Modernization wizard
+1. Start the Java Modernization workflow
 
     1. In the **Bob** panel, click on **Permissions** to see which activities IBM Bob is allowed to do without approval. Set the settings to **Read**.
     This will allow you to better understand the workflow and decisions.
@@ -972,7 +972,7 @@ In the section we will outline how AMA Dev Tools can help with the modernization
 
         Click on **Approve once**.
 
-    2. Review the vulnerability results by expaning the twisties.
+    2. Review the vulnerability results by expanding the twisties.
     
         <kbd>![Bob_Java_Modernization_Workflow_Vulnerabilities2.png](./images/media/Bob_Java_Modernization_Workflow_Vulnerabilities2.png)</kbd>
 
@@ -1005,15 +1005,15 @@ In the section we will outline how AMA Dev Tools can help with the modernization
 
         <kbd>![Bob_Java_Modernization_Workflow_Uploaded_migrationplan.png](./images/media/Bob_Java_Modernization_Workflow_Uploaded_migrationplan.png)</kbd>
 
-    4. Bob extracts the migration plan and wants to save the Liberty server configuration file server.xml as well as the Containerfile. Click on  **Approve once** for server.xml as well as for Containerfile.
+    4. Bob extracts the migration plan and wants to save the embedded Liberty server configuration file **server.xml** as well as the **Containerfile**. Click on  **Approve once** for server.xml as well as for Containerfile.
 
         <kbd>![Bob_Java_Modernization_Workflow_Extract_migrationplan.png](./images/media/Bob_Java_Modernization_Workflow_Extract_migrationplan.png)</kbd>
 
         <kbd>![Bob_Java_Modernization_Workflow_Extract_migrationplan2.png](./images/media/Bob_Java_Modernization_Workflow_Extract_migrationplan2.png)</kbd>
 
-    5. Bob has analyzed the AMA reports and knows which issues have been identified. As  next step, IBM Bob wants to download the recipes for the automated fixes.
+    5. Bob has analyzed the AMA reports and knows which issues have been identified. As  next step, Bob wants to download the recipes for the automated fixes.
     Before applying the fixes, let's take a look at the application as is.
-    DO NOT CLICK on Approve as 
+    **DO NOT CLICK** on **Approve once** yet.
 
         <kbd>![Bob_Java_Modernization_Workflow_Analyze_AMA_reports.png](./images/media/Bob_Java_Modernization_Workflow_Analyze_AMA_reports.png)</kbd>
 
@@ -1021,13 +1021,13 @@ In the section we will outline how AMA Dev Tools can help with the modernization
 4. Test the application on Liberty
 
     As the tool does a static analysis, it cannot detect if the identified issues really need to be fixed or are located in unused code.
-    Therefore, before continuing with the modernization, let's try to run the application as is on Liberty.
+    Therefore, before continuing with the modernization, let's try to run the unchanged traditional WAS application on Liberty.
 
     1. Open a new terminal in Bob
 
         <kbd>![Bob_New_Terminal](./images/media/Bob_New_Terminal.png)</kbd>
 
-    2. Configure Liberty to use Java 8. This is done via the Liberty configuration file **server.env**. Copy the following commandinto the terminal
+    2. Configure Liberty to use Java 8. This is done via the Liberty configuration file **server.env**. Copy the following command into the terminal
 
             cd ~/Student/modresorts-project
             echo "JAVA_HOME=/usr/lib/jvm/ibm-semeru-open-8-jdk" >> src/main/liberty/config/server.env
@@ -1042,11 +1042,11 @@ In the section we will outline how AMA Dev Tools can help with the modernization
 
         <kbd>![modresorts_TestAppOnLiberty1](./images/media/modresorts_TestAppOnLiberty1.png)</kbd>
 
-    4. Right-click on modresorts and select Start to start the application on Liberty
+    4. **Right-click** on **modresorts** and select **Start** to start the application on Liberty.
 
         <kbd>![modresorts_TestAppOnLiberty2](./images/media/modresorts_TestAppOnLiberty2.png)</kbd>
 
-    5. The application gets started 
+    5. The application gets started. Wait until the server and the application have been started.
 
         <kbd>![modresorts_TestAppOnLiberty2a](./images/media/modresorts_TestAppOnLiberty2a.png)</kbd>
 
@@ -1072,24 +1072,20 @@ In the section we will outline how AMA Dev Tools can help with the modernization
 
         <kbd>![modresorts_unchanged_Liberty3.png](./images/media/modresorts_unchanged_Liberty3.png)</kbd>
 
-        Switch to VSCode and you should see an error related to **revokeSSOCookies**
+        Switch to the Bob IDE and you should see an error related to **revokeSSOCookies**
 
         <kbd>![modresorts_unchanged_Liberty3a.png](./images/media/modresorts_unchanged_Liberty3a.png)</kbd>
 
-        This confirms that the application cannot run without any change on Liberty with Java 8.
+        This confirms that the application as is cannot run on Liberty with Java 8.
     
-    7. In the IBM Bob IDE, stop the Liberty instance via **Liberty Dashboard**
-        (Right-click on modresorts). If that does not work, use CTRL-C in the terminal to stop Liberty.
-
-        <kbd>![modresorts_TestAppOnLiberty3](./images/media/modresorts_TestAppOnLiberty3.png)</kbd>
-
+    7. In the terminal press CTRL-C to stop the Liberty instance. 
         Make sure that the server gets stopped.
 
         <kbd>![modresorts_TestAppOnLiberty4](./images/media/modresorts_TestAppOnLiberty4.png)</kbd>
 
 
 
-5. Continue with the modernization wizard
+5. Continue with the modernization wizard.
 
     1. Go back tp the modernization wizard and click on **Approve once** to apply the automated fixes.
 
@@ -1103,17 +1099,22 @@ In the section we will outline how AMA Dev Tools can help with the modernization
 
         <kbd>![Bob_Recipes_applied_details.png](./images/media/Bob_Recipes_applied_details.png)</kbd>
 
-        You can see that the LogoutServlet.java and the Weatherservlet.java have been changed. 
+        You can see that the **LogoutServlet.java** and the **Weatherservlet.java** have been changed. 
     
-    4. To better compare what has changed, switch to the **Source Control** view and compare the files.
+    4. To better compare what has changed, switch to the **Source Control** view and compare the files. 5 files have been changed so far.
 
+        - The files **server.xml** and **Containerfile** have been copied over from the migration plan.
+        - The file **server.env** has been created to make Liberty use Java 8.
+        - The files **LogoutServlet.java** and the **Weatherservlet.java** have been changed by the recipes. 
+        
+        Click on **LogoutServlet.java** to view the changes.
         <kbd>![Bob_git_compare.png](./images/media/Bob_git_compare.png)</kbd>
 
     5. After reviewing the changes, close the comparison.
 
         <kbd>![Bob_git_compare.png](./images/media/Bob_git_compare2.png)</kbd>
 
-3. Now that Bob resolved via recipes the issues with automated fixes, Bob will take a look at the remaining issues and will use agentic AI to resolve them.
+3. Now that Bob resolved all issues with automated fixes via recipes, Bob will take a look at the remaining issues and will use agentic AI to resolve them.
 
     1. Fix the issues around **WebSphere Runtime APIs and SPIs**
 
@@ -1123,12 +1124,11 @@ In the section we will outline how AMA Dev Tools can help with the modernization
 
             Click on **Approve once** to continue. 
 
-        2. Bob creates a subtask and a Todo list  to fix the issue based on the recommendations from the AMA migration plan.
+        2. Bob creates a subtask and a **Todo** list to fix the issue based on the recommendations from the AMA migration plan.
 
             <kbd>![Bob_Fix_WebSphere_Runtimes2.png](./images/media/Bob_Fix_WebSphere_Runtimes2.png)</kbd>
 
-            Review the Todo list (you could also edit it if needed). 
-            Click on **Approve once** to continue. 
+            Review the Todo list (you could also edit it to add or remove steps). Finally click on **Approve once** to continue. 
 
 
         3. Bob detects that the critical code no longer exists in the WeatherServlet. It wants to review the changes in git to understand why.
@@ -1137,7 +1137,7 @@ In the section we will outline how AMA Dev Tools can help with the modernization
 
             Click on **Approve once** to continue. 
 
-        4. Bob verified that the code was already changed (by the recipses), so no further action is required. Therefore Bob wants to compile the code and verify it.
+        4. Bob verified that the code was already changed (by the recipes), so no further action is required. Therefore Bob wants to update the Todo list.
 
             <kbd>![Bob_Fix_WebSphere_Runtimes4.png](./images/media/Bob_Fix_WebSphere_Runtimes4.png)</kbd>
 
@@ -1149,13 +1149,13 @@ In the section we will outline how AMA Dev Tools can help with the modernization
 
             Click on **Approve once** to continue. 
 
-        6. Bob has completed the Todo list and wants to proceed.
+        6. Bob wants to update the Todo list.
 
             <kbd>![Bob_Fix_WebSphere_Runtimes6.png](./images/media/Bob_Fix_WebSphere_Runtimes6.png)</kbd>
 
             Click on **Approve once** to continue. 
 
-        7. Bob wants to create a summary what has been done in the subtask.
+        7. Bob wants to complete the subtask.
 
             <kbd>![Bob_Fix_WebSphere_Runtimes7.png](./images/media/Bob_Fix_WebSphere_Runtimes7.png)</kbd>
 
@@ -1186,7 +1186,7 @@ In the section we will outline how AMA Dev Tools can help with the modernization
             Click on **Approve todo tools for task** to continue. 
 
 
-        3. Bob explains the issue and proposes a solution based on Apache Commons.
+        3. Bob explains the issue and proposes a solution based on **Apache Commons**.
 
             <kbd>![Bob_Fix_WebSphere_ServletAPI3.png](./images/media/Bob_Fix_WebSphere_ServletAPI3.png)</kbd>
 
@@ -1204,13 +1204,15 @@ In the section we will outline how AMA Dev Tools can help with the modernization
 
             <kbd>![Bob_Fix_WebSphere_ServletAPI5.png](./images/media/Bob_Fix_WebSphere_ServletAPI5.png)</kbd>
 
+            Your list of alternatives might look different, Bob might also decide to display the alternatives as list instead of a table.
+
             Select **Apache Commons** by clicking on the related field.
 
         5. Bob wants to edit the pom.xml.
 
             <kbd>![Bob_Fix_WebSphere_ServletAPI6.png](./images/media/Bob_Fix_WebSphere_ServletAPI6.png)</kbd>
 
-            As reduce the number of approvals for the task, click on **Approve edit tools for task** to continue. 
+            To reduce the number of approvals for the task, click on **Approve edit tools for task** to continue. 
     
         6. Bob wants to execute the command "mvn compile". 
 
@@ -1218,7 +1220,7 @@ In the section we will outline how AMA Dev Tools can help with the modernization
 
             Click on **Approve for task** to continue. 
 
-        7. Bob wants to create a summary what has been done in the subtask.
+        7. Bob wants to complete the subtask.
 
             <kbd>![Bob_Fix_WebSphere_ServletAPI8.png](./images/media/Bob_Fix_WebSphere_ServletAPI8.png)</kbd>
 
@@ -1230,7 +1232,7 @@ In the section we will outline how AMA Dev Tools can help with the modernization
             <kbd>![Bob_Fix_WebSphere_Runtimes8.png](./images/media/Bob_Fix_WebSphere_Runtimes8.png)</kbd>
 
 
-    3. Bob has completed the Liberty replatforming tasks. Let's review the performed tasks and validate the changes.
+    3. Bob has completed the tasks related to **Replatform Liberty issues**. Let's review the performed tasks and validate the changes.
     
         1. Review what has been done so far:
     
@@ -1243,7 +1245,7 @@ In the section we will outline how AMA Dev Tools can help with the modernization
 
             Click on **Start local deployment**.
 
-        3. Bob will ask for permission to start a subtask.
+        3. Bob will ask for permission to start the **Deploy** subtask.
 
             <kbd>![Bob_Start_Deployment1.png](./images/media/Bob_Start_Deployment1.png)</kbd>
 
@@ -1325,23 +1327,23 @@ In the section we will outline how AMA Dev Tools can help with the modernization
         
             <kbd>![Bob_Start_Deployment14.png](./images/media/Bob_Start_Deployment14.png)</kbd>
 
-            Feel free to do so, you can find them under 
-            Exlorer > target/liberty/wlp/usr/servers/modresorts/logs/messages.log
+            Feel free to do so, you can find the log here: 
+            **Explorer > target/liberty/wlp/usr/servers/modresorts/logs/messages.log**
         
             Then click on **Yes, the application started successfully with no errors** to continue. 
 
 
-        17. Bob wants to create a summary. 
+        17. Bob wants to complete the subtask. 
         
             <kbd>![Bob_Start_Deployment15.png](./images/media/Bob_Start_Deployment15.png)</kbd>
 
             Click on **Approve for task** to continue. 
 
-        18. Bob created a visual summary. 
+        18. Bob created a summary with a diagram visualizing the performed tasks. 
         
             <kbd>![Bob_Visual_Summary.png](./images/media/Bob_Visual_Summary.png)</kbd>
 
-            Click on the visual summary to expand the diagram. 
+            Click on the diagram to expand the diagram. 
 
             <kbd>![Bob_Mermaid_Diagram](./images/media/Bob_Mermaid_Diagram.png)</kbd>
 
@@ -1371,11 +1373,11 @@ In the section we will outline how AMA Dev Tools can help with the modernization
 
         <kbd>![Bob_Permissions_Task](./images/media/Bob_Permissions_Task.png)</kbd>
 
-        In the last part of the lab, you click several times on **Approve for task**. This is reflected in the task permissions.
+        In the last part of the lab, you clicked several times on **Approve for task**. This is reflected in the task permissions.
     
     2. Adjust the permissions overall
 
-        Task permissions are only valid for the current task. But typically there are some permissions that you want to approve for any project and task. This is defined in the **Bob Settings**.
+        Task permissions are only valid for the current task. But typically there are some permissions that you want to approve for any project and task. These are defined in the **Bob Settings**.
 
         Click in the Bob panel on **Settings**.
 
@@ -1389,14 +1391,13 @@ In the section we will outline how AMA Dev Tools can help with the modernization
 
         <kbd>![Bob_Auto_Approval_Execute.png](./images/media/Bob_Auto_Approval_Execute.png)</kbd>
 
-        As you can see, the auto-approval for Execute is not enabled so far. 
-        Feel free to enable it.
+        As you can see, the auto-approval for **Execute** is not enabled so far. Feel free to enable it.
         
-        In this section, you could also add your own commands like **curl**, **mvn clean** and so on that you want to auto-approve.
+        In the section, you could also add commands like **curl**, **mvn clean** and so on that you want to auto-approve.
 
-        Close the section for Execute.
+        Close the section for **Execute**.
 
-        Scroll down and you can see that the read and write files is only allowed within the workspace even if auto-approval for **Read** or **Edit** is enabled. 
+        Scroll down to the **Workspace sandbox** settings and you can see that the read and write files is only allowed within the workspace even if auto-approval for **Read** or **Edit** is enabled. 
 
         <kbd>![Bob_Workspace_Sandbox.png](./images/media/Bob_Workspace_Sandbox.png)</kbd>
 
