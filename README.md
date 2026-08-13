@@ -1220,7 +1220,7 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
 
             Click on **Approve for task** to continue. 
 
-        7. Bob wants to create a summary what has been done in the subtask.
+        7. Bob wants to complete the subtask.
 
             <kbd>![Bob_Fix_WebSphere_ServletAPI8.png](./images/media/Bob_Fix_WebSphere_ServletAPI8.png)</kbd>
 
@@ -1232,7 +1232,7 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
             <kbd>![Bob_Fix_WebSphere_Runtimes8.png](./images/media/Bob_Fix_WebSphere_Runtimes8.png)</kbd>
 
 
-    3. Bob has completed the Liberty replatforming tasks. Let's review the performed tasks and validate the changes.
+    3. Bob has completed the tasks related to **Replatform Liberty issues**. Let's review the performed tasks and validate the changes.
     
         1. Review what has been done so far:
     
@@ -1245,7 +1245,7 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
 
             Click on **Start local deployment**.
 
-        3. Bob will ask for permission to start a subtask.
+        3. Bob will ask for permission to start the **Deploy** subtask.
 
             <kbd>![Bob_Start_Deployment1.png](./images/media/Bob_Start_Deployment1.png)</kbd>
 
@@ -1327,23 +1327,23 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
         
             <kbd>![Bob_Start_Deployment14.png](./images/media/Bob_Start_Deployment14.png)</kbd>
 
-            Feel free to do so, you can find them under 
-            Exlorer > target/liberty/wlp/usr/servers/modresorts/logs/messages.log
+            Feel free to do so, you can find the log here: 
+            **Explorer > target/liberty/wlp/usr/servers/modresorts/logs/messages.log**
         
             Then click on **Yes, the application started successfully with no errors** to continue. 
 
 
-        17. Bob wants to create a summary. 
+        17. Bob wants to complete the subtask. 
         
             <kbd>![Bob_Start_Deployment15.png](./images/media/Bob_Start_Deployment15.png)</kbd>
 
             Click on **Approve for task** to continue. 
 
-        18. Bob created a visual summary. 
+        18. Bob created a summary with a diagram visualizing the performed tasks. 
         
             <kbd>![Bob_Visual_Summary.png](./images/media/Bob_Visual_Summary.png)</kbd>
 
-            Click on the visual summary to expand the diagram. 
+            Click on the diagram to expand the diagram. 
 
             <kbd>![Bob_Mermaid_Diagram](./images/media/Bob_Mermaid_Diagram.png)</kbd>
 
@@ -1373,11 +1373,11 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
 
         <kbd>![Bob_Permissions_Task](./images/media/Bob_Permissions_Task.png)</kbd>
 
-        In the last part of the lab, you click several times on **Approve for task**. This is reflected in the task permissions.
+        In the last part of the lab, you clicked several times on **Approve for task**. This is reflected in the task permissions.
     
     2. Adjust the permissions overall
 
-        Task permissions are only valid for the current task. But typically there are some permissions that you want to approve for any project and task. This is defined in the **Bob Settings**.
+        Task permissions are only valid for the current task. But typically there are some permissions that you want to approve for any project and task. These are defined in the **Bob Settings**.
 
         Click in the Bob panel on **Settings**.
 
@@ -1391,14 +1391,13 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
 
         <kbd>![Bob_Auto_Approval_Execute.png](./images/media/Bob_Auto_Approval_Execute.png)</kbd>
 
-        As you can see, the auto-approval for Execute is not enabled so far. 
-        Feel free to enable it.
+        As you can see, the auto-approval for **Execute** is not enabled so far. Feel free to enable it.
         
-        In this section, you could also add your own commands like **curl**, **mvn clean** and so on that you want to auto-approve.
+        In the section, you could also add commands like **curl**, **mvn clean** and so on that you want to auto-approve.
 
-        Close the section for Execute.
+        Close the section for **Execute**.
 
-        Scroll down and you can see that the read and write files is only allowed within the workspace even if auto-approval for **Read** or **Edit** is enabled. 
+        Scroll down to the **Workspace sandbox** settings and you can see that the read and write files is only allowed within the workspace even if auto-approval for **Read** or **Edit** is enabled. 
 
         <kbd>![Bob_Workspace_Sandbox.png](./images/media/Bob_Workspace_Sandbox.png)</kbd>
 
