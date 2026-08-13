@@ -1114,7 +1114,7 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
 
         <kbd>![Bob_git_compare.png](./images/media/Bob_git_compare2.png)</kbd>
 
-3. Now that Bob resolved via recipes the issues with automated fixes, Bob will take a look at the remaining issues and will use agentic AI to resolve them.
+3. Now that Bob resolved all issues with automated fixes via recipes, Bob will take a look at the remaining issues and will use agentic AI to resolve them.
 
     1. Fix the issues around **WebSphere Runtime APIs and SPIs**
 
@@ -1124,12 +1124,11 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
 
             Click on **Approve once** to continue. 
 
-        2. Bob creates a subtask and a Todo list  to fix the issue based on the recommendations from the AMA migration plan.
+        2. Bob creates a subtask and a **Todo** list to fix the issue based on the recommendations from the AMA migration plan.
 
             <kbd>![Bob_Fix_WebSphere_Runtimes2.png](./images/media/Bob_Fix_WebSphere_Runtimes2.png)</kbd>
 
-            Review the Todo list (you could also edit it if needed). 
-            Click on **Approve once** to continue. 
+            Review the Todo list (you could also edit it to add or remove steps). Finally click on **Approve once** to continue. 
 
 
         3. Bob detects that the critical code no longer exists in the WeatherServlet. It wants to review the changes in git to understand why.
@@ -1138,7 +1137,7 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
 
             Click on **Approve once** to continue. 
 
-        4. Bob verified that the code was already changed (by the recipses), so no further action is required. Therefore Bob wants to compile the code and verify it.
+        4. Bob verified that the code was already changed (by the recipes), so no further action is required. Therefore Bob wants to update the Todo list.
 
             <kbd>![Bob_Fix_WebSphere_Runtimes4.png](./images/media/Bob_Fix_WebSphere_Runtimes4.png)</kbd>
 
@@ -1150,13 +1149,13 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
 
             Click on **Approve once** to continue. 
 
-        6. Bob has completed the Todo list and wants to proceed.
+        6. Bob wants to update the Todo list.
 
             <kbd>![Bob_Fix_WebSphere_Runtimes6.png](./images/media/Bob_Fix_WebSphere_Runtimes6.png)</kbd>
 
             Click on **Approve once** to continue. 
 
-        7. Bob wants to create a summary what has been done in the subtask.
+        7. Bob wants to complete the subtask.
 
             <kbd>![Bob_Fix_WebSphere_Runtimes7.png](./images/media/Bob_Fix_WebSphere_Runtimes7.png)</kbd>
 
