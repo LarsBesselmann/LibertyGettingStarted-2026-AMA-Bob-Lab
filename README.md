@@ -972,7 +972,7 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
 
         Click on **Approve once**.
 
-    2. Review the vulnerability results by expaning the twisties.
+    2. Review the vulnerability results by expanding the twisties.
     
         <kbd>![Bob_Java_Modernization_Workflow_Vulnerabilities2.png](./images/media/Bob_Java_Modernization_Workflow_Vulnerabilities2.png)</kbd>
 
@@ -1005,15 +1005,15 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
 
         <kbd>![Bob_Java_Modernization_Workflow_Uploaded_migrationplan.png](./images/media/Bob_Java_Modernization_Workflow_Uploaded_migrationplan.png)</kbd>
 
-    4. Bob extracts the migration plan and wants to save the Liberty server configuration file server.xml as well as the Containerfile. Click on  **Approve once** for server.xml as well as for Containerfile.
+    4. Bob extracts the migration plan and wants to save the embedded Liberty server configuration file **server.xml** as well as the **Containerfile**. Click on  **Approve once** for server.xml as well as for Containerfile.
 
         <kbd>![Bob_Java_Modernization_Workflow_Extract_migrationplan.png](./images/media/Bob_Java_Modernization_Workflow_Extract_migrationplan.png)</kbd>
 
         <kbd>![Bob_Java_Modernization_Workflow_Extract_migrationplan2.png](./images/media/Bob_Java_Modernization_Workflow_Extract_migrationplan2.png)</kbd>
 
-    5. Bob has analyzed the AMA reports and knows which issues have been identified. As  next step, IBM Bob wants to download the recipes for the automated fixes.
+    5. Bob has analyzed the AMA reports and knows which issues have been identified. As  next step, Bob wants to download the recipes for the automated fixes.
     Before applying the fixes, let's take a look at the application as is.
-    DO NOT CLICK on Approve as 
+    **DO NOT CLICK** on **Approve once** yet.
 
         <kbd>![Bob_Java_Modernization_Workflow_Analyze_AMA_reports.png](./images/media/Bob_Java_Modernization_Workflow_Analyze_AMA_reports.png)</kbd>
 
@@ -1021,13 +1021,13 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
 4. Test the application on Liberty
 
     As the tool does a static analysis, it cannot detect if the identified issues really need to be fixed or are located in unused code.
-    Therefore, before continuing with the modernization, let's try to run the application as is on Liberty.
+    Therefore, before continuing with the modernization, let's try to run the unchanged traditional WAS application on Liberty.
 
     1. Open a new terminal in Bob
 
         <kbd>![Bob_New_Terminal](./images/media/Bob_New_Terminal.png)</kbd>
 
-    2. Configure Liberty to use Java 8. This is done via the Liberty configuration file **server.env**. Copy the following commandinto the terminal
+    2. Configure Liberty to use Java 8. This is done via the Liberty configuration file **server.env**. Copy the following command into the terminal
 
             cd ~/Student/modresorts-project
             echo "JAVA_HOME=/usr/lib/jvm/ibm-semeru-open-8-jdk" >> src/main/liberty/config/server.env
@@ -1042,11 +1042,11 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
 
         <kbd>![modresorts_TestAppOnLiberty1](./images/media/modresorts_TestAppOnLiberty1.png)</kbd>
 
-    4. Right-click on modresorts and select Start to start the application on Liberty
+    4. **Right-click** on **modresorts** and select **Start** to start the application on Liberty.
 
         <kbd>![modresorts_TestAppOnLiberty2](./images/media/modresorts_TestAppOnLiberty2.png)</kbd>
 
-    5. The application gets started 
+    5. The application gets started. Wait until the server and the application have been started.
 
         <kbd>![modresorts_TestAppOnLiberty2a](./images/media/modresorts_TestAppOnLiberty2a.png)</kbd>
 
@@ -1072,24 +1072,20 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
 
         <kbd>![modresorts_unchanged_Liberty3.png](./images/media/modresorts_unchanged_Liberty3.png)</kbd>
 
-        Switch to VSCode and you should see an error related to **revokeSSOCookies**
+        Switch to the Bob IDE and you should see an error related to **revokeSSOCookies**
 
         <kbd>![modresorts_unchanged_Liberty3a.png](./images/media/modresorts_unchanged_Liberty3a.png)</kbd>
 
-        This confirms that the application cannot run without any change on Liberty with Java 8.
+        This confirms that the application as is cannot run on Liberty with Java 8.
     
-    7. In the IBM Bob IDE, stop the Liberty instance via **Liberty Dashboard**
-        (Right-click on modresorts). If that does not work, use CTRL-C in the terminal to stop Liberty.
-
-        <kbd>![modresorts_TestAppOnLiberty3](./images/media/modresorts_TestAppOnLiberty3.png)</kbd>
-
+    7. In the terminal press CTRL-C to stop the Liberty instance. 
         Make sure that the server gets stopped.
 
         <kbd>![modresorts_TestAppOnLiberty4](./images/media/modresorts_TestAppOnLiberty4.png)</kbd>
 
 
 
-5. Continue with the modernization wizard
+5. Continue with the modernization wizard.
 
     1. Go back tp the modernization wizard and click on **Approve once** to apply the automated fixes.
 
@@ -1103,10 +1099,15 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
 
         <kbd>![Bob_Recipes_applied_details.png](./images/media/Bob_Recipes_applied_details.png)</kbd>
 
-        You can see that the LogoutServlet.java and the Weatherservlet.java have been changed. 
+        You can see that the **LogoutServlet.java** and the **Weatherservlet.java** have been changed. 
     
-    4. To better compare what has changed, switch to the **Source Control** view and compare the files.
+    4. To better compare what has changed, switch to the **Source Control** view and compare the files. 5 files have been changed so far.
 
+        - The files **server.xml** and **Containerfile** have been copied over from the migration plan.
+        - The file **server.env** has been created to make Liberty use Java 8.
+        - The files **LogoutServlet.java** and the **Weatherservlet.java** have been changed by the recipes. 
+        
+        Click on **LogoutServlet.java** to view the changes.
         <kbd>![Bob_git_compare.png](./images/media/Bob_git_compare.png)</kbd>
 
     5. After reviewing the changes, close the comparison.
