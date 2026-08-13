@@ -811,9 +811,7 @@ Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools wi
         <kbd>![Bob_Change_Theme.png](./images/media/Bob_Change_Theme.png)</kbd>
 
     
-    5. If you see during the lab one of the pop-ups below or any other pop-up asking to install something, close the pop-up without installation by clicking the **X**. 
-
-        <kbd>![Bob_Popup1.png](./images/media/Bob_Popup1.png)</kbd>
+    5. If you see during the lab a pop-up like below or any other pop-up asking to install something, close the pop-up without installation by clicking the **X**. 
 
         <kbd>![Bob_Popup2.png](./images/media/Bob_Popup2.png)</kbd>
 
