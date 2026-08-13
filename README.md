@@ -783,45 +783,32 @@ Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools wi
 
         The IBM Bob IDE will be opened.
 
-    2. You might see the one or other panel:
-    
-        1. If you get a pop-up that Authentication is required, enter **IBMDem0s!** in both fields and select **Continue**.
-    
-            <kbd>![Bob_Keyring.png](./images/media/Bob_Keyring.png)</kbd>
+        If you get a Welcome panel offering to import settings, click on **Skip for now**,
 
-        2. If you get a pop-up that Authentication is required, click on **Yes, I trust the authors** to continue.
+        <kbd>![Bob_Import_Panel.png](./images/media/Bob_Import_Panel.png)</kbd>
+        
 
-            <kbd>![Bob_TrustAuthor.png](./images/media/Bob_TrustAuthor.png)</kbd>
+    2. If you get a pop-up that a Bob update is available, click on settings and select **Keep current version**.
 
-        3. If you get a pop-up that a Bob update is available, click on settings and select **Keep current version**.
+        <kbd>![Bob_UpdateAvailable.png](./images/media/Bob_UpdateAvailable.png)</kbd>
 
-            <kbd>![Bob_UpdateAvailable.png](./images/media/Bob_UpdateAvailable.png)</kbd>
+        <kbd>![Bob_Keep_current_version.png](./images/media/Bob_Keep_current_version.png)</kbd>
+       
 
-            <kbd>![Bob_Keep_current_version.png](./images/media/Bob_Keep_current_version.png)</kbd>
+    3. If you get a **Bob Getting Started** panel, close it:
 
+        <kbd>![Bob_Getting_Started.png](./images/media/Bob_Getting_Started.png)</kbd>
 
-    3. On the Welcome Panel you can open the Walkthrough to get more insight into IBM Bob. Feel free to open it.
-
-        <kbd>![Bob_Welcome.png](./images/media/Bob_Welcome.png)</kbd>
-
-    Finally, close the **Welcome** panel. 
-
-    4. Under settings, you can change the theme. The lab document uses as color **Bob Theme**. Feel free to adjust the theme to your choice. 
-
-        <kbd>![Bob_Change_Theme.png](./images/media/Bob_Change_Theme.png)</kbd>
-
-    
-    5. If you see during the lab a pop-up like below or any other pop-up asking to install something, close the pop-up without installation by clicking the **X**. 
+    4. If you see during the lab a pop-up like below or any other pop-up asking to install something, close the pop-up without installation by clicking the **X**. 
 
         <kbd>![Bob_Popup2.png](./images/media/Bob_Popup2.png)</kbd>
 
 
-    6. Look at the bottom left of your Bobide window to find out if Bobide runs in Restricted Mode.
-
+    5. Look at the bottom left of your Bobide window to find out if Bobide runs in Restricted Mode.
 
         <kbd>![Bob_RestrictedMode2.png](./images/media/Bob_RestrictedMode2.png)</kbd>
 
-        If so, click on the field *Restricted Mode* to open the panel.
+        If so, click on the field **Restricted Mode** to open the panel.
 
         <kbd>![Bob_RestrictedMode1.png](./images/media/Bob_RestrictedMode1.png)</kbd>
 
@@ -831,6 +818,18 @@ Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools wi
         Finally close the pop-up by clicking on **X**.
         <kbd>![Bob_RestrictedMode4.png](./images/media/Bob_RestrictedMode4.png)</kbd>
 
+        If you used Bob before, you might see a **Migration** panel like this:
+
+        <kbd>![Bob_Skip_Migration.png](./images/media/Bob_Skip_Migration.png)</kbd>
+
+        Click on **Skip migration** to continue.
+
+        
+    4. The lab document uses the color theme **Bob Theme**. If you want to change your theme, you can do so under settings. 
+
+        <kbd>![Bob_Change_Theme.png](./images/media/Bob_Change_Theme.png)</kbd>
+
+    
 
 3. Take a look at the installed extensions
 
