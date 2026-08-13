@@ -1186,7 +1186,7 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
             Click on **Approve todo tools for task** to continue. 
 
 
-        3. Bob explains the issue and proposes a solution based on Apache Commons.
+        3. Bob explains the issue and proposes a solution based on **Apache Commons**.
 
             <kbd>![Bob_Fix_WebSphere_ServletAPI3.png](./images/media/Bob_Fix_WebSphere_ServletAPI3.png)</kbd>
 
@@ -1204,13 +1204,15 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
 
             <kbd>![Bob_Fix_WebSphere_ServletAPI5.png](./images/media/Bob_Fix_WebSphere_ServletAPI5.png)</kbd>
 
+            Your list of alternatives might look different, Bob might also decide to display the alternatives as list instead of a table.
+
             Select **Apache Commons** by clicking on the related field.
 
         5. Bob wants to edit the pom.xml.
 
             <kbd>![Bob_Fix_WebSphere_ServletAPI6.png](./images/media/Bob_Fix_WebSphere_ServletAPI6.png)</kbd>
 
-            As reduce the number of approvals for the task, click on **Approve edit tools for task** to continue. 
+            To reduce the number of approvals for the task, click on **Approve edit tools for task** to continue. 
     
         6. Bob wants to execute the command "mvn compile". 
 
