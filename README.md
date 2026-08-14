@@ -1611,7 +1611,7 @@ Congratulations, you have finished the application modernization part.
 
 ## Summary
 
-In this lab, you learned how to assess a WebSphere application using IBM Application Modernization Accelerator. In addition, you learned how to use the AMA Dev Tools to apply automated fixes and resolve other issues.
+In this lab, you learned how to assess a WebSphere application using IBM Application Modernization Accelerator. In addition, you learned how to use IBM Bob Tools to apply automated fixes and resolve other issues using agentic AI.
 
 **Congratulations!**
 
