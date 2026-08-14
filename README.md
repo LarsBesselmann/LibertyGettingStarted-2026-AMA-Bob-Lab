@@ -4,7 +4,7 @@
 
 **Last updated:** August 2026
 
-**Status:** Under Development
+**Status:** Ready for testing
 
 **Duration:** 90 minutes
 
