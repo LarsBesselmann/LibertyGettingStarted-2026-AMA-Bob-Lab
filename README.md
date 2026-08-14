@@ -1425,18 +1425,17 @@ Now let's take a look at the Java Upgrade workflow.
 
 1. Start the Java Upgrade Workflow
 
-    1. Switch to the Bob panel, click on the **Start Workflow** icon and click on **Java Modernization** **Start** button
+    1. Switch to the **Bob** panel, click on the **Workflow** icon, expand **Java Modernization** and click on **Start**.
     
         <kbd>![Bob_Java_Modernization_Workflow_start2.png](./images/media/Bob_Java_Modernization_Workflow_start2.png)</kbd>
 
-    2. Bob wants to analyze project to see which modernization workflows make sense.
+    2. Bob wants to analyze the project to identify which modernization workflows make sense.
 
         <kbd>![Bob_Java_Modernization_Workflow_Analyze_Project.png](./images/media/Bob_Java_Modernization_Workflow_Analyze_Project.png)</kbd>
 
         Click on **Continue**.
 
-    3. Bob offers different options of application modernization. As you can see, **Liberty Modernization** is disabled. 
-    Select **Java Upgrade** and **Disable Git Flow**.
+    3. Bob offers different **Modernization Types**. As you can see, **Liberty Modernization** is disabled. This is because Bob identified the project as Liberty project. Select **Java Upgrade** and **Disable Git Flow**.
     
         <kbd>![Bob_Java_Modernization_Workflow_ModernizationType2.png](./images/media/Bob_Java_Modernization_Workflow_ModernizationType2.png)</kbd>
     
@@ -1453,17 +1452,23 @@ Now let's take a look at the Java Upgrade workflow.
         As Semeru 21 is installed, select as shown in the screenshot.
     
         <kbd>![Bob_Java_Modernization_Workflow_Select_Target_Java.png](./images/media/Bob_Java_Modernization_Workflow_Select_Target_Java.png)</kbd>    
-    
-        Click on **Continue**.
+
+        Also take a look at the **Description** and **Key Technical Challenges.** Finally, click on **Continue**.
 
 
 2. Let Bob fix the Java Upgrade issues
 
-    1. Bob found issues and wants to use an agent to fix them
+    1. Bob runs some recipes to modernize the Java project. As Bob found some issues, Bob wants to start a sub-task to fix them
 
         <kbd>![Bob_Java_Modernization_Workflow_Fix_Java_Issues1.png](./images/media/Bob_Java_Modernization_Workflow_Fix_Java_Issues1.png)</kbd>
     
         Click on **Approve subtask tools for task**.
+
+    2. Bob fixed the issues and found some vulnerabilities. Expand the **Vulnerability** section to see the details.
+
+        <kbd>![Bob_Java_Modernization_Workflow_Fix_Java_Issues2_Vuln.png](./images/media/Bob_Java_Modernization_Workflow_Fix_Java_Issues2_Vuln.png)</kbd>
+    
+        Click on **Yes** to continue.
 
     2. Bob fixed the issues and wants to compile the application.
 
