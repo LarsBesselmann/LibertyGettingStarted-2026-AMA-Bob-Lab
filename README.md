@@ -4,7 +4,7 @@
 
 **Last updated:** August 2026
 
-**Status:** Under Development
+**Status:** Ready for testing
 
 **Duration:** 90 minutes
 
@@ -759,7 +759,7 @@ You will need the migration plan in the next section.
 
 ## 7. Use the IBM Bob Premium Package for Java Modernization
 
-Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools will help you to apply automated fixes and see the remaining issues in the source code.
+Now you will use IBM Bob to do the required code changes. IBM Bob will help you to apply automated fixes and see the remaining issues in the source code.
 
 ### 7.1 Explore the IBM Bob installation and complete setup
 
@@ -829,7 +829,6 @@ Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools wi
 
         <kbd>![Bob_Change_Theme.png](./images/media/Bob_Change_Theme.png)</kbd>
 
-    
 
 3. Take a look at the installed extensions
 
@@ -944,7 +943,7 @@ Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools wi
 
 
 ### 7.2 Modernize modresorts to WebSphere Liberty using IBM Bob
-In the section you will use the **Liberty Modernization Workflow** to modernize the application to Liberty.
+In the section you will use the **Liberty Modernization Workflow** to modernize the application to Liberty. 
 
 1. Start the Java Modernization workflow
 
@@ -1114,7 +1113,7 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
 
         <kbd>![Bob_git_compare.png](./images/media/Bob_git_compare2.png)</kbd>
 
-3. Now that Bob resolved all issues with automated fixes via recipes, Bob will take a look at the remaining issues and will use agentic AI to resolve them.
+3. Now that Bob resolved all issues with automated fixes via recipes, Bob will take a look at the remaining issues and will use agentic AI to resolve them. While the overall resolution steps will stay the same, there might be differences in the order and the recommendations provided by Bob.
 
     1. Fix the issues around **WebSphere Runtime APIs and SPIs**
 
@@ -1421,22 +1420,21 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
 
 ### 7.3 Perform a Java upgrade using IBM Bob
 
-Now let's take a look at the Java Upgrade workflow.
+Now let's take a look at the Java Upgrade workflow. Bob will use agentic to do the Java upgrade. While the overall steps will stay the same, there might be differences in the order and the recommendations provided by Bob.
 
 1. Start the Java Upgrade Workflow
 
-    1. Switch to the Bob panel, click on the **Start Workflow** icon and click on **Java Modernization** **Start** button
+    1. Switch to the **Bob** panel, click on the **Workflow** icon, expand **Java Modernization** and click on **Start**.
     
         <kbd>![Bob_Java_Modernization_Workflow_start2.png](./images/media/Bob_Java_Modernization_Workflow_start2.png)</kbd>
 
-    2. Bob wants to analyze project to see which modernization workflows make sense.
+    2. Bob wants to analyze the project to identify which modernization workflows make sense.
 
         <kbd>![Bob_Java_Modernization_Workflow_Analyze_Project.png](./images/media/Bob_Java_Modernization_Workflow_Analyze_Project.png)</kbd>
 
         Click on **Continue**.
 
-    3. Bob offers different options of application modernization. As you can see, **Liberty Modernization** is disabled. 
-    Select **Java Upgrade** and **Disable Git Flow**.
+    3. Bob offers different **Modernization Types**. As you can see, **Liberty Modernization** is disabled. This is because Bob identified the project as Liberty project. Select **Java Upgrade** and **Disable Git Flow**.
     
         <kbd>![Bob_Java_Modernization_Workflow_ModernizationType2.png](./images/media/Bob_Java_Modernization_Workflow_ModernizationType2.png)</kbd>
     
@@ -1453,59 +1451,48 @@ Now let's take a look at the Java Upgrade workflow.
         As Semeru 21 is installed, select as shown in the screenshot.
     
         <kbd>![Bob_Java_Modernization_Workflow_Select_Target_Java.png](./images/media/Bob_Java_Modernization_Workflow_Select_Target_Java.png)</kbd>    
-    
-        Click on **Continue**.
+
+        Also take a look at the **Description** and **Key Technical Challenges.** Finally, click on **Continue**.
 
 
 2. Let Bob fix the Java Upgrade issues
 
-    1. Bob found issues and wants to use an agent to fix them
+    1. Bob runs some recipes to modernize the Java project. As Bob found some issues, Bob wants to start a sub-task to fix them
 
         <kbd>![Bob_Java_Modernization_Workflow_Fix_Java_Issues1.png](./images/media/Bob_Java_Modernization_Workflow_Fix_Java_Issues1.png)</kbd>
     
         Click on **Approve subtask tools for task**.
 
-    2. Bob fixed the issues and wants to compile the application.
+    2. Bob fixed the issues and found some vulnerabilities. Expand the **Vulnerability** section to see the details.
 
-        <kbd>![Bob_Java_Modernization_Workflow_Fix_Java_Issues2.png](./images/media/Bob_Java_Modernization_Workflow_Fix_Java_Issues2.png)</kbd>
+        <kbd>![Bob_Java_Modernization_Workflow_Fix_Java_Issues2_Vuln.png](./images/media/Bob_Java_Modernization_Workflow_Fix_Java_Issues2_Vuln.png)</kbd>
+    
+        Click on **Yes** to continue.
+
+    3. Bob creates a **Todo** list
+
+        <kbd>![Bob_Java_Modernization_Workflow_Fix_Java_Issues2_Vuln1.png](./images/media/Bob_Java_Modernization_Workflow_Fix_Java_Issues2_Vuln1.png)</kbd>
+    
+        Click on **Approve todo for task**.
+
+    4. Bob wants to check the dependency tree for the frameworks:
+
+        <kbd>![Bob_Java_Modernization_Workflow_Fix_Java_Issues2_Vuln2.png](./images/media/Bob_Java_Modernization_Workflow_Fix_Java_Issues2_Vuln2.png)</kbd>
     
         Click on **Approve for task**.
 
-    3. Bob identified some vulnerabilities in application. Expand the section to see the details.
+    5. Bob fixed the issues and wants to review the resolved dependencies:
 
-        <kbd>![Bob_Java_Modernization_Workflow_Fix_Java_Issues3.png](./images/media/Bob_Java_Modernization_Workflow_Fix_Java_Issues3.png)</kbd>
+        <kbd>![Bob_Java_Modernization_Workflow_Fix_Java_Issues2_Vuln3.png](./images/media/Bob_Java_Modernization_Workflow_Fix_Java_Issues2_Vuln3.png)</kbd>
     
-        As you can see, the vulnerabilities are in the Spring and Apache Commons frameworks used by the application.
-
-        Click on **Yes** to get the issues resolved.
-
-    4. Bob create a Todo list how to resolve the vulnerabilities:
-
-        <kbd>![Bob_Java_Modernization_Workflow_Fix_Java_Issues4.png](./images/media/Bob_Java_Modernization_Workflow_Fix_Java_Issues4.png)</kbd>
-     
-        Click on **Approve todo tools for task**.
-
-    5. Bob wants to check the dependency tree for the frameworks:
-
-        <kbd>![Bob_Java_Modernization_Workflow_Fix_Java_Issues5.png](./images/media/Bob_Java_Modernization_Workflow_Fix_Java_Issues5.png)</kbd>
-     
         Click on **Approve for task**.
 
-    6. Bob wants to check the dependency tree for the framework versions:
+    6. Bob want to build the application finally:
 
-        <kbd>![Bob_Java_Modernization_Workflow_Fix_Java_Issues6.png](./images/media/Bob_Java_Modernization_Workflow_Fix_Java_Issues6.png)</kbd>
-     
+        <kbd>![Bob_Java_Modernization_Workflow_Fix_Java_Issues2_Vuln4.png](./images/media/Bob_Java_Modernization_Workflow_Fix_Java_Issues2_Vuln4.png)</kbd>
+    
         Click on **Approve for task**.
 
-    7. Bob verified that the new versions do not have vulnerabilities. Now bob wants to compile the application:
-
-        <kbd>![Bob_Java_Modernization_Workflow_Fix_Java_Issues7.png](./images/media/Bob_Java_Modernization_Workflow_Fix_Java_Issues7.png)</kbd>
-     
-        Click on **Approve for task**.
-
-        <kbd>![Bob_Java_Modernization_Workflow_Fix_Java_Issues7a.png](./images/media/Bob_Java_Modernization_Workflow_Fix_Java_Issues7a.png)</kbd>
-     
-        Click on **Approve for task**.
 
 3. Review Java Upgrade Summary
 
@@ -1520,7 +1507,8 @@ Now let's take a look at the Java Upgrade workflow.
         ![Bob_Java_Upgrade_MigrationDiagram1.png](./images/media/Bob_Java_Upgrade_MigrationDiagram1.png)
         ![Bob_Java_Upgrade_MigrationDiagram2.png](./images/media/Bob_Java_Upgrade_MigrationDiagram2.png)
         ![Bob_Java_Upgrade_MigrationDiagram3.png](./images/media/Bob_Java_Upgrade_MigrationDiagram3.png)
-        ![Bob_Java_Upgrade_MigrationDiagram4.png](./images/media/Bob_Java_Upgrade_MigrationDiagram4.png)
+    
+    Your flow might look slightly different.
      
 4. Optionally test the application with Java 21
 
@@ -1532,20 +1520,33 @@ Now let's take a look at the Java Upgrade workflow.
 
         <kbd>![Bob_Java_Upgrade_Liberty_ChangeJVM2.png](./images/media/Bob_Java_Upgrade_Liberty_ChangeJVM2.png)</kbd>
     
+        Also take a look at the **server.xml** file.
+
+        <kbd>![Bob_Java_Upgrade_Liberty_ChangeServer.xml.png](./images/media/Bob_Java_Upgrade_Liberty_ChangeServer.xml.png)</kbd>
+    
+        As you can see, did not upgrade the server.xml file to the newer standards.    
+
     2. Ask Bob to update the Liberty server configuration:
 
-            Update the Liberty server configuration to fit to the updated application
+             Update the Liberty server configuration to fit to the updated application. Use versionbless features. Set the platform to jakartaee-10.0.
 
         If required, you might have to approve a task.
+        Finally, Bob should show a table with the initial and changed features.
 
         <kbd>![Bob_Update_Liberty_Configuration.png](./images/media/Bob_Update_Liberty_Configuration.png)</kbd>
 
+        Feel free to take another look at the **server.xml**.
+
+        <kbd>![Bob_Java_Upgrade_Liberty_ChangeServer.xml2.png](./images/media/Bob_Java_Upgrade_Liberty_ChangeServer.xml2.png)</kbd>
         
     3. Use the Liberty Dashboard to start Liberty
         (Right-click on modresorts)
 
         <kbd>![Bob_Start_Liberty.png](./images/media/Bob_Start_Liberty.png)</kbd>
         
+        If you get an error, paste it into the Bob Chat window to let Bob fix it.
+
+
     4. Open in the browser the URL http://localhost:9080/resorts.
     
     5. Click on **Where to?** and switch to Paris or another city. 
@@ -1574,6 +1575,8 @@ Now let's take a look at the Java Upgrade workflow.
     Finally, test the application again in the browser. Click on **Where to?** and switch to Paris should no longer return an error.
 
     <kbd>![Bob_ModerResorts_Paris_Success.png](./images/media/Bob_ModerResorts_Paris_Success.png)</kbd>
+
+    Switch back to the Bob IDE and stop the Liberty instance via **CTRL+C**.
 
 This concludes the lab around Java Modernization. 
 
@@ -1608,7 +1611,7 @@ Congratulations, you have finished the application modernization part.
 
 ## Summary
 
-In this lab, you learned how to assess a WebSphere application using IBM Application Modernization Accelerator. In addition, you learned how to use the AMA Dev Tools to apply automated fixes and resolve other issues.
+In this lab, you learned how to assess a WebSphere application using IBM Application Modernization Accelerator. In addition, you learned how to use IBM Bob Tools to apply automated fixes and resolve other issues using agentic AI.
 
 **Congratulations!**
 
