@@ -1470,47 +1470,30 @@ Now let's take a look at the Java Upgrade workflow.
     
         Click on **Yes** to continue.
 
-    2. Bob fixed the issues and wants to compile the application.
+    3. Bob creates a **Todo** list
 
-        <kbd>![Bob_Java_Modernization_Workflow_Fix_Java_Issues2.png](./images/media/Bob_Java_Modernization_Workflow_Fix_Java_Issues2.png)</kbd>
+        <kbd>![Bob_Java_Modernization_Workflow_Fix_Java_Issues2_Vuln1.png](./images/media/Bob_Java_Modernization_Workflow_Fix_Java_Issues2_Vuln1.png)</kbd>
+    
+        Click on **Approve todo for task**.
+
+    4. Bob wants to check the dependency tree for the frameworks:
+
+        <kbd>![Bob_Java_Modernization_Workflow_Fix_Java_Issues2_Vuln2.png](./images/media/Bob_Java_Modernization_Workflow_Fix_Java_Issues2_Vuln2.png)</kbd>
     
         Click on **Approve for task**.
 
-    3. Bob identified some vulnerabilities in application. Expand the section to see the details.
+    5. Bob fixed the issues and wants to review the resolved dependencies:
 
-        <kbd>![Bob_Java_Modernization_Workflow_Fix_Java_Issues3.png](./images/media/Bob_Java_Modernization_Workflow_Fix_Java_Issues3.png)</kbd>
+        <kbd>![Bob_Java_Modernization_Workflow_Fix_Java_Issues2_Vuln3.png](./images/media/Bob_Java_Modernization_Workflow_Fix_Java_Issues2_Vuln3.png)</kbd>
     
-        As you can see, the vulnerabilities are in the Spring and Apache Commons frameworks used by the application.
-
-        Click on **Yes** to get the issues resolved.
-
-    4. Bob create a Todo list how to resolve the vulnerabilities:
-
-        <kbd>![Bob_Java_Modernization_Workflow_Fix_Java_Issues4.png](./images/media/Bob_Java_Modernization_Workflow_Fix_Java_Issues4.png)</kbd>
-     
-        Click on **Approve todo tools for task**.
-
-    5. Bob wants to check the dependency tree for the frameworks:
-
-        <kbd>![Bob_Java_Modernization_Workflow_Fix_Java_Issues5.png](./images/media/Bob_Java_Modernization_Workflow_Fix_Java_Issues5.png)</kbd>
-     
         Click on **Approve for task**.
 
-    6. Bob wants to check the dependency tree for the framework versions:
+    6. Bob want to build the application finally:
 
-        <kbd>![Bob_Java_Modernization_Workflow_Fix_Java_Issues6.png](./images/media/Bob_Java_Modernization_Workflow_Fix_Java_Issues6.png)</kbd>
-     
+        <kbd>![Bob_Java_Modernization_Workflow_Fix_Java_Issues2_Vuln4.png](./images/media/Bob_Java_Modernization_Workflow_Fix_Java_Issues2_Vuln4.png)</kbd>
+    
         Click on **Approve for task**.
 
-    7. Bob verified that the new versions do not have vulnerabilities. Now bob wants to compile the application:
-
-        <kbd>![Bob_Java_Modernization_Workflow_Fix_Java_Issues7.png](./images/media/Bob_Java_Modernization_Workflow_Fix_Java_Issues7.png)</kbd>
-     
-        Click on **Approve for task**.
-
-        <kbd>![Bob_Java_Modernization_Workflow_Fix_Java_Issues7a.png](./images/media/Bob_Java_Modernization_Workflow_Fix_Java_Issues7a.png)</kbd>
-     
-        Click on **Approve for task**.
 
 3. Review Java Upgrade Summary
 
@@ -1525,7 +1508,8 @@ Now let's take a look at the Java Upgrade workflow.
         ![Bob_Java_Upgrade_MigrationDiagram1.png](./images/media/Bob_Java_Upgrade_MigrationDiagram1.png)
         ![Bob_Java_Upgrade_MigrationDiagram2.png](./images/media/Bob_Java_Upgrade_MigrationDiagram2.png)
         ![Bob_Java_Upgrade_MigrationDiagram3.png](./images/media/Bob_Java_Upgrade_MigrationDiagram3.png)
-        ![Bob_Java_Upgrade_MigrationDiagram4.png](./images/media/Bob_Java_Upgrade_MigrationDiagram4.png)
+    
+    Your flow might look slightly different.
      
 4. Optionally test the application with Java 21
 
