@@ -759,7 +759,7 @@ You will need the migration plan in the next section.
 
 ## 7. Use the IBM Bob Premium Package for Java Modernization
 
-Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools will help you to apply automated fixes and see the remaining issues in the source code.
+Now you will use IBM Bob to do the required code changes. IBM Bob will help you to apply automated fixes and see the remaining issues in the source code.
 
 ### 7.1 Explore the IBM Bob installation and complete setup
 
@@ -829,7 +829,6 @@ Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools wi
 
         <kbd>![Bob_Change_Theme.png](./images/media/Bob_Change_Theme.png)</kbd>
 
-    
 
 3. Take a look at the installed extensions
 
@@ -944,7 +943,7 @@ Now you will use AMA Dev Tools to do the required code changes. AMA Dev Tools wi
 
 
 ### 7.2 Modernize modresorts to WebSphere Liberty using IBM Bob
-In the section you will use the **Liberty Modernization Workflow** to modernize the application to Liberty.
+In the section you will use the **Liberty Modernization Workflow** to modernize the application to Liberty. 
 
 1. Start the Java Modernization workflow
 
@@ -1114,7 +1113,7 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
 
         <kbd>![Bob_git_compare.png](./images/media/Bob_git_compare2.png)</kbd>
 
-3. Now that Bob resolved all issues with automated fixes via recipes, Bob will take a look at the remaining issues and will use agentic AI to resolve them.
+3. Now that Bob resolved all issues with automated fixes via recipes, Bob will take a look at the remaining issues and will use agentic AI to resolve them. While the overall resolution steps will stay the same, there might be differences in the order and the recommendations provided by Bob.
 
     1. Fix the issues around **WebSphere Runtime APIs and SPIs**
 
@@ -1421,7 +1420,7 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
 
 ### 7.3 Perform a Java upgrade using IBM Bob
 
-Now let's take a look at the Java Upgrade workflow.
+Now let's take a look at the Java Upgrade workflow. Bob will use agentic to do the Java upgrade. While the overall steps will stay the same, there might be differences in the order and the recommendations provided by Bob.
 
 1. Start the Java Upgrade Workflow
 
@@ -1521,20 +1520,33 @@ Now let's take a look at the Java Upgrade workflow.
 
         <kbd>![Bob_Java_Upgrade_Liberty_ChangeJVM2.png](./images/media/Bob_Java_Upgrade_Liberty_ChangeJVM2.png)</kbd>
     
+        Also take a look at the **server.xml** file.
+
+        <kbd>![Bob_Java_Upgrade_Liberty_ChangeServer.xml.png](./images/media/Bob_Java_Upgrade_Liberty_ChangeServer.xml.png)</kbd>
+    
+        As you can see, did not upgrade the server.xml file to the newer standards.    
+
     2. Ask Bob to update the Liberty server configuration:
 
-            Update the Liberty server configuration to fit to the updated application
+             Update the Liberty server configuration to fit to the updated application. Use versionbless features. Set the platform to jakartaee-10.0.
 
         If required, you might have to approve a task.
+        Finally, Bob should show a table with the initial and changed features.
 
         <kbd>![Bob_Update_Liberty_Configuration.png](./images/media/Bob_Update_Liberty_Configuration.png)</kbd>
 
+        Feel free to take another look at the **server.xml**.
+
+        <kbd>![Bob_Java_Upgrade_Liberty_ChangeServer.xml2.png](./images/media/Bob_Java_Upgrade_Liberty_ChangeServer.xml2.png)</kbd>
         
     3. Use the Liberty Dashboard to start Liberty
         (Right-click on modresorts)
 
         <kbd>![Bob_Start_Liberty.png](./images/media/Bob_Start_Liberty.png)</kbd>
         
+        If you get an error, paste it into the Bob Chat window to let Bob fix it.
+
+
     4. Open in the browser the URL http://localhost:9080/resorts.
     
     5. Click on **Where to?** and switch to Paris or another city. 
@@ -1563,6 +1575,8 @@ Now let's take a look at the Java Upgrade workflow.
     Finally, test the application again in the browser. Click on **Where to?** and switch to Paris should no longer return an error.
 
     <kbd>![Bob_ModerResorts_Paris_Success.png](./images/media/Bob_ModerResorts_Paris_Success.png)</kbd>
+
+    Switch back to the Bob IDE and stop the Liberty instance via **CTRL+C**.
 
 This concludes the lab around Java Modernization. 
 
