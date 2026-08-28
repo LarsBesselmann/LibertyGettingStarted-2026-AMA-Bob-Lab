@@ -89,7 +89,16 @@ Let's check if AMA is already started. This can be validated by reviewing if the
 
     <kbd>![Terminal](./images/media/Terminal.png)</kbd>
 
-    HINT: By default, the terminal window has a dark background.
+    <table>
+    <tbody>
+    <tr class="odd">
+    <td><kbd><img src="./images/media/info.png" alt="sign-info" /></kbd></td>
+    <td>
+    <p>By default, the terminal window has a dark background.</p></td>
+    </tr>
+    </tbody>
+    </table>
+    
 
 2. Access the AMA launch script to verify if AMA is started or not
 
@@ -944,6 +953,18 @@ Now you will use IBM Bob to do the required code changes. IBM Bob will help you 
 
 ### 7.2 Modernize modresorts to WebSphere Liberty using IBM Bob
 In the section you will use the **Liberty Modernization Workflow** to modernize the application to Liberty. 
+
+
+<img src="./images/media/warning.png" align="left" width="100" style="margin-right: 10px;">
+
+<p><b>ATTENTION: NON-DETERMINISTIC WORK AHEAD:</b></p>
+IBM Bob is powered by generative AI and LLMs, and a defining trait of these systems is that they are non-deterministic — unlike deterministic tools like AMA. 
+<div style="clear: both;"></div>
+
+<p>
+
+In practice, that means the same prompt can produce different code from one run to the next. All this is to say: 
+Your results ahead may vary and you might not you arrive at the exact same codebase at the end. Bob will ensure that the application gets modernized. The exact implementation and steps that Bob takes to arrive at that result, however, may differ from the steps documented here.
 
 1. Start the Java Modernization workflow
 
