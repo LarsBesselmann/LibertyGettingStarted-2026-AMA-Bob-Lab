@@ -955,27 +955,14 @@ Now you will use IBM Bob to do the required code changes. IBM Bob will help you 
 In the section you will use the **Liberty Modernization Workflow** to modernize the application to Liberty. 
 
 
+<img src="./images/media/warning.png" align="left" width="100" style="margin-right: 10px;">
 
-<table> 
-    <tbody>
-    <tr class="odd">
-    <td><kbd><img src="./images/media/warning.png" alt="sign-warn" width="50%" height="50%"/></kbd></td>
-    <td>
-    <p><b>ATTENTION: NON-DETERMINISTIC WORK AHEAD:</b></p>
-    </td>
-    </tr>
-    </tbody>
-    </table>
+<p><b>ATTENTION: NON-DETERMINISTIC WORK AHEAD:</b></p>
+IBM Bob is powered by generative AI and LLMs, and a defining trait of these systems is that they are non-deterministic — unlike deterministic tools like AMA. 
+<div style="clear: both;"></div>
 
-    Bob's responses are non-deterministic, so questions posed to you within your Bob IDE may differ from those shown here. It's also possible you may receive no clarifying questions at all.
-
-    IBM Bob is powered by generative AI and LLMs, and a defining trait of these systems is that they are non-deterministic — unlike the deterministic tools most developers are accustomed to. In practice, that means the same prompt can produce different code from one run to the next. This is both a strength and a quirk of the technology, and it is something to work with rather than against.
-
-    All this is to say: Your results ahead may vary. Whether or not you arrive at the exact same codebase at the end is of less importance. Bob will ensure either way that your application works and delivers more-or-less what you asked for. The exact implementation and steps that Bob takes to arrive at that result, however, may differ from the steps documented here.
-
-
-
-
+In practice, that means the same prompt can produce different code from one run to the next. All this is to say: 
+Your results ahead may vary and you might not you arrive at the exact same codebase at the end. Bob will ensure that the application gets modernized. The exact implementation and steps that Bob takes to arrive at that result, however, may differ from the steps documented here.
 
 1. Start the Java Modernization workflow
 
