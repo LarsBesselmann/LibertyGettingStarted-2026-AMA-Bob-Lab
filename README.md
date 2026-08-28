@@ -964,7 +964,7 @@ IBM Bob is powered by generative AI and LLMs, and a defining trait of these syst
 <p>
 
 In practice, that means the same prompt can produce different code from one run to the next. All this is to say: 
-Your results ahead may vary and you might not you arrive at the exact same codebase at the end. Bob will ensure that the application gets modernized. The exact implementation and steps that Bob takes to arrive at that result, however, may differ from the steps documented here.
+Your results ahead may vary and you might not arrive at the exact same codebase at the end. Bob will ensure that the application gets modernized. The exact implementation and steps that Bob takes to arrive at that result, however, may differ from the steps documented here.
 
 1. Start the Java Modernization workflow
 
