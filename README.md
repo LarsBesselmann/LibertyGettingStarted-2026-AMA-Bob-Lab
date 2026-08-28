@@ -961,6 +961,8 @@ In the section you will use the **Liberty Modernization Workflow** to modernize 
 IBM Bob is powered by generative AI and LLMs, and a defining trait of these systems is that they are non-deterministic — unlike deterministic tools like AMA. 
 <div style="clear: both;"></div>
 
+<p>
+
 In practice, that means the same prompt can produce different code from one run to the next. All this is to say: 
 Your results ahead may vary and you might not you arrive at the exact same codebase at the end. Bob will ensure that the application gets modernized. The exact implementation and steps that Bob takes to arrive at that result, however, may differ from the steps documented here.
 
