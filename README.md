@@ -1918,6 +1918,14 @@ This section explains how to apply the access key via AMA User Interface. You co
     mvn clean package
     cp ~/Student/modresorts-project/target/modresorts-2.0.0.war ~/Student/assets/
 
+    # Initialize git
+    cd ~/Student/modresorts-project
+    git init
+    git config --global user.name "John Doe"
+    git config --global user.email john.doe@noreply
+    git add .
+    git commit -a -m "Initial project"
+
     # Install application
     ~/usr/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/startManager.sh
     cd ~/Student/modresorts-project/tWAS-Scripts
