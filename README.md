@@ -1887,3 +1887,46 @@ This section explains how to apply the access key via AMA User Interface. You co
     
     **This capability is not available with the trial access key.**
 </details>
+
+
+## 7. Setup Demo
+
+    # Create Sample_Workspace
+    curl -k -X 'POST' \
+    'https://localhost:2220/lands_advisor/advisor/v2/collectionArchives/uploadSampleData' \
+    -H 'accept: */*' \
+    -H 'locale: en' \
+    -H 'workspaceName: Sample_Data' \
+    -d ''
+
+    # Create directories
+    mkdir ~/Student
+    mkdir ~/Student/assets
+    mkdir ~/Student/backup
+
+    # Clone repository
+    rm -rf ~/Student/temprepo/
+    git clone https://github.com/LarsBesselmann/LibertyGettingStarted-2026-AMA-Lab ~/Student/temprepo
+    mv ~/Student/temprepo/modresorts-project ~/Student
+    rm -rf ~/Student/temprepo/
+
+    # Prepare build environment
+    cd ~/Student/modresorts-project/
+    mvn install:install-file -Dfile=/home/itzuser/usr/IBM/WebSphere/AppServer/dev/was_public.jar -DpomFile=/home/itzuser/usr/IBM/WebSphere/AppServer/dev/was_public-9.0.0.pom
+
+    # Build application
+    mvn clean package
+    cp ~/Student/modresorts-project/target/modresorts-2.0.0.war ~/Student/assets/
+
+    # Install application
+    ~/usr/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/startManager.sh
+    cd ~/Student/modresorts-project/tWAS-Scripts
+    ~/usr/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/wsadmin.sh -f ./modresorts_install.py
+    ~/usr/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/wsadmin.sh -f ./setURLProvider.py
+    ~/usr/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/stopManager.sh
+
+    # Copy Data Collecion to Download directory
+    cp ~/Student/modresorts-project/ama/Dmgr01.zip ~/Downloads
+
+    # Apply PoC Key
+     sh ~/software/AMA/AMA_apply_PoC_Key.sh 
