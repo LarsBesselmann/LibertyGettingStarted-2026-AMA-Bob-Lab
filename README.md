@@ -70,9 +70,9 @@ The following software has been installed:
     - The Liberty Tools
 
 
-## 4 Special notice
+## Useful hints if you did the AMA lab before
 <details>
-<Summary> Please open only if you did the AMA lab before </Summary>
+<Summary> Please open if you did the AMA lab before </Summary>
 
 If you did the AMA lab before in the same environment, you already did the assessment and applied the PoC key. Therefore you only need to do a sub-set.
 
