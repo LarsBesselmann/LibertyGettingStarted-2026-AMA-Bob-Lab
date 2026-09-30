@@ -70,6 +70,41 @@ The following software has been installed:
     - The Liberty Tools
 
 
+## 4 Special notice
+<details>
+<Summary> Please open only if you did the AMA lab before </Summary>
+
+If you did the AMA lab before in the same environment, you already did the assessment and applied the PoC key. Therefore you only need to do a sub-set.
+
+        # Create the required working directories
+        rm -rf ~/Student
+        mkdir ~/Student
+        mkdir ~/Student/assets
+        mkdir ~/Student/backup
+
+        # Clone the repository
+        git clone https://github.com/LarsBesselmann/LibertyGettingStarted-2026-AMA-Bob-Lab ~/Student/temprepo
+        mv ~/Student/temprepo/modresorts-project ~/Student
+        rm -rf ~/Student/temprepo/
+
+        # Install the required WAS library
+        cd ~/Student/modresorts-project/
+
+        mvn install:install-file -Dfile=/home/itzuser/usr/IBM/WebSphere/AppServer/dev/was_public.jar -DpomFile=/home/itzuser/usr/IBM/WebSphere/AppServer/dev/was_public-9.0.0.pom
+
+        # Apply the AMA PoC access key:
+        sh ~/software/AMA/AMA_apply_PoC_Key.sh 
+
+      # Copy the migration plan to the Downloads directory
+
+        cp ~/software/AMA/modresorts/modresorts-2_0_0_war.ear_migrationPlan.zip ~/Downloads/
+
+Continue with Chapter **7 Use the IBM Bob Premium Package for Java Modernization**
+<br>
+</details>
+
+
+
 ## 5. Explore Application Modernization Accelerator
 In this section, you will get a brief overview how to explore the main capabilities of Application Modernization Accelerator using the sample data that is shipped with the product. You can find more details on the appendix.
 
@@ -762,6 +797,7 @@ You will need the migration plan in the next section.
 
 <br>
 </details>
+
 
 ## 7. Use the IBM Bob Premium Package for Java Modernization
 
