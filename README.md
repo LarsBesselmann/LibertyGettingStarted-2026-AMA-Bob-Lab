@@ -70,7 +70,10 @@ The following software has been installed:
     - The Liberty Tools
 
 
-## Useful hints if you did the AMA lab before
+## 5. Explore Application Modernization Accelerator
+In this section, you will get a brief overview how to explore the main capabilities of Application Modernization Accelerator using the sample data that is shipped with the product. You can find more details on the appendix.
+
+### Useful hints if you did the AMA lab before
 <details>
 <Summary> Please open if you did the AMA lab before </Summary>
 
@@ -104,9 +107,6 @@ Continue with Chapter **7 Use the IBM Bob Premium Package for Java Modernization
 </details>
 
 
-
-## 5. Explore Application Modernization Accelerator
-In this section, you will get a brief overview how to explore the main capabilities of Application Modernization Accelerator using the sample data that is shipped with the product. You can find more details on the appendix.
 
 ### 5.1 Start AMA
 
