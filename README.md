@@ -80,6 +80,7 @@ In this section, you will get a brief overview how to explore the main capabilit
 If you did the AMA lab before in the same environment, you already did the assessment and applied the PoC key. Therefore you only need to do a sub-set.
 
         # Create the required working directories
+        cd ~
         rm -rf ~/Student
         mkdir ~/Student
         mkdir ~/Student/assets
@@ -1932,6 +1933,7 @@ This section explains how to apply the access key via AMA User Interface. You co
     -d ''
 
     # Create directories
+    cd ~
     rm -rf ~/Student
     mkdir ~/Student
     mkdir ~/Student/assets
