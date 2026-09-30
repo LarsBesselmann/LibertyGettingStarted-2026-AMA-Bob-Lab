@@ -1886,7 +1886,6 @@ This section explains how to apply the access key via AMA User Interface. You co
     <kbd>![AMA_Evaluation_Assessment-modresorts4b.png](./images/media/AMA_Evaluation_Assessment-modresorts4b.png)</kbd>
     
     **This capability is not available with the trial access key.**
-</details>
 
 
 ## 7. Setup Demo
@@ -1939,3 +1938,6 @@ This section explains how to apply the access key via AMA User Interface. You co
 
     # Apply PoC Key
      sh ~/software/AMA/AMA_apply_PoC_Key.sh 
+
+
+</details>
