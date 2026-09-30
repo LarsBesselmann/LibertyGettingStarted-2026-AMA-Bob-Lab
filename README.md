@@ -737,7 +737,6 @@ You will need the migration plan in the next section.
 
 2. Clone the repository to get access to the application binaries and more.
 
-        rm -rf ~/Student/temprepo/
         git clone https://github.com/LarsBesselmann/LibertyGettingStarted-2026-AMA-Bob-Lab ~/Student/temprepo
         mv ~/Student/temprepo/modresorts-project ~/Student
         rm -rf ~/Student/temprepo/
@@ -1899,13 +1898,12 @@ This section explains how to apply the access key via AMA User Interface. You co
     -d ''
 
     # Create directories
+    rm -rf ~/Student
     mkdir ~/Student
     mkdir ~/Student/assets
     mkdir ~/Student/backup
 
     # Clone repository
-    rm -rf ~/Student/temprepo/
-    rm -rf ~/Student/modresorts-project/
     git clone https://github.com/LarsBesselmann/LibertyGettingStarted-2026-AMA-Lab ~/Student/temprepo
     mv ~/Student/temprepo/modresorts-project ~/Student
     rm -rf ~/Student/temprepo/
