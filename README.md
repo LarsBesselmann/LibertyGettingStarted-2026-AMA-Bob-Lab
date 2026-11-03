@@ -552,9 +552,9 @@ In this section of the lab, you will explore assessment details for the **modres
 
         The application modresorts has been assessed
         - of complexity **Moderate**, which means that code changes might be required
-        - **5 severe issues** have been identified with need to be fixed
+        - **4 severe issues** have been identified with need to be fixed
         - some of the required code changes can be done automated via recipes
-        - the estimated development effort is 2.5 days
+        - the estimated development effort is 1.5 days
     
     2. Click on the application to get more details
         
@@ -568,13 +568,13 @@ In this section of the lab, you will explore assessment details for the **modres
 
         Here, you get insights into the related issues that may require code changes or configuration changes. 
 
-        *In this example, there is 5 issues of which 3 have an automated fix:*
+        *In this example, there is 4 issues of which 3 have an automated fix:*
+        (in older versions of AMA, 5 issues were detected).
 
         - **Avoid using the deprecated WSSecurityHelper revokeSSOCookies and getLTPACookieFromSSOToken methods**
         - **Use the default InitialContext JNDI properties**
         - **The WebSphere Servlet API was superseded by a newer implementation**
         - **Getting the server name on Liberty**
-        - **The WebSphere Runtime APIs and SPIs are unavailable**
 
         There are also 4 **informational issue** which are well known and documented how to resolve by the migration tools.
 
@@ -590,9 +590,9 @@ In this section of the lab, you will explore assessment details for the **modres
 
         <kbd>![AMA_Evaluation_Assessment-modresorts4.png](./images/media/AMA_Evaluation_Assessment-modresorts4.png)</kbd>
 
-        Expand any of the 5 issues and you can get more details about the issue, recommended changes and which code is impacted. But this capability is not available with a trial access key.
+        Expand any of the 4 issues and you can get more details about the issue, recommended changes and which code is impacted. But this capability is not available with a trial access key.
 
-        <kbd>![AMA_Evaluation_Assessment-modresorts4.png](./images/media/AMA_Evaluation_Assessment-modresorts4a.png)</kbd>
+        <kbd>![AMA_Evaluation_Assessment-modresorts4a.png](./images/media/AMA_Evaluation_Assessment-modresorts4a.png)</kbd>
         You will come back to this section later when the PoC access key has been applied.
 
 
@@ -659,7 +659,7 @@ Now lets apply an AMA Access Key so that you get access to the analysis detals a
 
     <kbd>![AMA_Evaluation_Assessment-modresorts4.png](./images/media/AMA_Evaluation_Assessment-modresorts4.png)</kbd>
 
-    Expand any of the 5 issues and you can get more details about the issue, recommended changes and which code is impacted. 
+    Expand any of the 4 issues and you can get more details about the issue, recommended changes and which code is impacted. 
 
     <kbd>![AMA_Evaluation_Assessment-modresorts4b.png](./images/media/AMA_Evaluation_Assessment-modresorts4b.png)</kbd>
     
@@ -1187,7 +1187,7 @@ Your results ahead may vary and you might not arrive at the exact same codebase 
             Review the Todo list (you could also edit it to add or remove steps). Finally, click on **Approve once** to continue. 
 
 
-        3. Bob detects that the critical code no longer exists in the WeatherServlet. It wants to review the changes in git to understand why.
+        3. Bob detects that the critical code no longer exists in the WeatherServlet. It wants to review the changes in git to understand why. (This might no longer be the case for the latest version.)
 
             <kbd>![Bob_Fix_WebSphere_Runtimes3.png](./images/media/Bob_Fix_WebSphere_Runtimes3.png)</kbd>
 
@@ -1917,7 +1917,7 @@ This section explains how to apply the access key via AMA User Interface. You co
 
     <kbd>![AMA_Evaluation_Assessment-modresorts4.png](./images/media/AMA_Evaluation_Assessment-modresorts4.png)</kbd>
 
-    Expand any of the 5 issues and you can get more details about the issue, recommended changes and which code is impacted. 
+    Expand any of the 4 issues and you can get more details about the issue, recommended changes and which code is impacted. 
 
     <kbd>![AMA_Evaluation_Assessment-modresorts4b.png](./images/media/AMA_Evaluation_Assessment-modresorts4b.png)</kbd>
     
