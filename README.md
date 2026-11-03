@@ -2,9 +2,9 @@
 
 <kbd>![Toolbar_terminal](./images/media/Bob_PremiumPackage4Java.png)</kbd>
 
-**Last updated:** August 2026
+**Last updated:** November 2026
 
-**Status:** Ready for testing
+**Status:** Ready for use
 
 **Duration:** 90 minutes
 
