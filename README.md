@@ -350,9 +350,11 @@ The application has not been installed to traditional WAS so far. Typically, you
 Open a terminal window and enter the following commands to install the application:
 
     ~/usr/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/startManager.sh
+    ~/usr/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/startNode.sh 
     cd ~/Student/modresorts-project/tWAS-Scripts
     ~/usr/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/wsadmin.sh -f ./modresorts_install.py
     ~/usr/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/wsadmin.sh -f ./setURLProvider.py
+    ~/usr/IBM/WebSphere/AppServer/profiles/AppSrv01/bin/stopNode.sh 
     ~/usr/IBM/WebSphere/AppServer/profiles/Dmgr01/bin/stopManager.sh
 
 
