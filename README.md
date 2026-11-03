@@ -569,6 +569,7 @@ In this section of the lab, you will explore assessment details for the **modres
         Here, you get insights into the related issues that may require code changes or configuration changes. 
 
         *In this example, there is 4 issues of which 3 have an automated fix:*
+        (in older versions of AMA, 5 issues were detected).
 
         - **Avoid using the deprecated WSSecurityHelper revokeSSOCookies and getLTPACookieFromSSOToken methods**
         - **Use the default InitialContext JNDI properties**
